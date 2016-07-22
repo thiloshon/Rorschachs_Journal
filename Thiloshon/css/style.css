@@ -11,6 +11,7 @@ body {
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
+
   color: #777777;
   color: #7f7f7f;
   background: #fff;
@@ -35,6 +36,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
+  /*color: #71cee5;*/
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
@@ -43,12 +45,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 ::-moz-selection {
-  color: #818892;
+  /*color: #818892;*/
+  color: #71cee5;
   background: #f9f6f0;
 }
 
 ::selection {
-  color: #818892;
+  /*color: #818892;*/
+  color: #71cee5;
   background: #f9f6f0;
 }
 
@@ -134,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 #fh5co-header #navbar li a:hover {
+  /*color: #71cee5;*/
   color: #fff;
 }
 #fh5co-header #navbar li a:hover span:before {
@@ -148,6 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   background: none;
   color: #fff;
+
 }
 #fh5co-header #navbar li.active a span:before {
   visibility: visible;
@@ -249,12 +255,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d30b1c;
   /* IE9, iOS 3.2+ */
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #333333), color-stop(1, #d30b1c));
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #52d3aa), color-stop(1, #d30b1c));
   /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #333333 0%, #d30b1c 100%);
+  background-image: -webkit-repeating-linear-gradient(top left, #52d3aa 0%, #d30b1c 100%);
   /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #333333 0%, #d30b1c 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #333333 0%, #d30b1c 100%);
+  background-image: repeating-linear-gradient(to bottom right, #52d3aa 0%, #d30b1c 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #52d3aa 0%, #d30b1c 100%);
 }
 #fh5co-home, #fh5co-home .text-wrap {
   height: 500px;
