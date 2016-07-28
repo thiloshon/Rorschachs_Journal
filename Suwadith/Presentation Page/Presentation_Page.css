@@ -1,0 +1,11 @@
+@font-face {
+    font-family: FeaturedItem;
+    src: url(FeaturedItem.ttf);
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: FeaturedItem;
+    font-size: 100px;
+}
