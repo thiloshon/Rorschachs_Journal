@@ -9,7 +9,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us!!!</title>
+    <title>Contact US!!!</title>
 </head>
 <body>
     <h1>Contact Us !!</h1>
