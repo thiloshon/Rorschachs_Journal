@@ -1,11 +1,55 @@
+html{
+    background-image: url(background.jpg);
+}
+
+body{
+    margin: 0 auto;
+    padding: 2em 2em 10em;
+    max-width: 800px;
+    line-height: 1.5em;
+    background-color: white;
+    /*background-image: url(background1.png);*/
+    /*-webkit-filter: grayscale(100%); !* Chrome, Safari, Opera *!
+    filter: grayscale(100%);*/
+
+}
+
 @font-face {
-    font-family: FeaturedItem;
-    src: url(FeaturedItem.ttf);
+    font-family: EthRomainEthon;
+    src: url(EthRomainEthon.ttf);
 }
 
 h1 {
+    /*padding: 0em 0em 0em 0em;*/
     color: black;
     text-align: center;
-    font-family: FeaturedItem;
-    font-size: 100px;
+    font-family: EthRomainEthon;
+    font-size: 80px;
+}
+
+h2 {
+    padding: 0.5em 0em 0.5em 0em;;
+    color: black;
+    text-align: left;
+    font-family: EthRomainEthon;
+    font-size: 50px;
+}
+
+ul{
+    padding: 0em 1em 1em 4em;
+    color: black;
+    text-align: left;
+    font-family: "";
+    font-size: 30px;
+}
+
+footer {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    clear: both;
+    text-align: center;
+    /*padding: !*5px*! ;*/
+    /*position:absolute;
+    bottom:0;*/
 }
