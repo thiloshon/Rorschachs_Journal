@@ -3,32 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>THE film CART</title>
+    <link rel="stylesheet" href="css/cart_Interface.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/googleapi.css">
 </head>
 <body>
+
 <header role="banner" id="fh5co-header">
-    <div class="container">
+    <div class="container" id="container">
         <!-- <div class="row"> -->
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <!-- Mobile Toggle Menu Button -->
-                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar"
-                   aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a class="navbar-brand" href="MainPage.html">THE Film HUB</a>
-            </div>
 
-            <div class="search">
-                <input class="todo-search-field" type="search" value="Search" placeholder="Search"/>
-            </div>
 
-            <div class="Login">
-                <a class="login" href="#">Login/Profile</a>
-            </div>
+        <div id="navbar-header" class="navbar-header">
+            <img src="images/Logo.png" alt="Movie Hub" style="width:273px;height:200px;">
 
-        </nav>
+            <!--<a id="navbar-brand" class="navbar-brand" href="MainPage.html">The Film Cart</a>-->
+        </div>
+
+        <div id="searchbox" class="search">
+            <!--<input class="todo-search-field" type="search" value="Search" placeholder="Search"/>-->
+
+            <div class="container">
+
+                <form action="javascript:void(0);" method="get">
+
+                    <fieldset>
+
+                        <ul class="toolbar clearfix">
+
+
+                            <li><input type="search" id="search" placeholder="What are you looking for?"></li>
+                            <li><button type="submit" id="btn-search"><span class="fontawesome-search"></span></button></li>
+
+                        </ul>
+
+                    </fieldset>
+
+                </form>
+
+            </div> <!-- end container -->
+        </div>
+
+        <div id="login" class="Login">
+            <a class="login" href="#">Login/Profile</a>
+        </div>
+
+
         <!-- </div> -->
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul id="list" class="nav navbar-nav navbar-right">
             <li class="active"><a href="#" data-nav-section="DVDs"><span>DVDs</span></a></li>
             <li><a href="#" data-nav-section="Cosplay"><span>Cosplay</span></a></li>
             <li><a href="#" data-nav-section="Dress"><span>Dress</span></a></li>
@@ -38,9 +63,16 @@
     </div>
 </header>
 
+
 <section id="body">
-    <div id="body-inner">
+
+    <div class="gradient"></div>
+    <div class="slant"></div>
+    <div>
+    <div>
+
         <div id="sidebar">
+
             <div id="legion">
                 Hi
             </div>
@@ -49,76 +81,111 @@
                     <div class="col-xs-4">
                         <div class="todo">
                             <div class="todo-search">
-                                <div class="todo-search-field">
-                                    Search
-                                </div>
-                                <ul>
-                                    <li class="todo-done">
-                                        <div class="todo-icon fui-user"></div>
-                                        <div class="todo-content">
-                                            <h4 class="todo-name">
-                                                Meet <strong>Adrian</strong> at <strong>6pm</strong>
-                                            </h4>
-                                            Times Square
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="todo-icon fui-list"></div>
-                                        <div class="todo-content">
-                                            <h4 class="todo-name">
-                                                Chat with <strong>V.Kudinov</strong>
-                                            </h4>
-                                            Skype conference an 9 am
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="todo-icon fui-eye"></div>
-                                        <div class="todo-content">
-                                            <h4 class="todo-name">
-                                                Watch <strong>Iron Man</strong>
-                                            </h4>
-                                            1998 Broadway
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="todo-icon fui-time"></div>
-                                        <div class="todo-content">
-                                            <h4 class="todo-name">
-                                                Fix bug on a <strong>Website</strong>
-                                            </h4>
-                                            As soon as possible
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!-- /.todo -->
-                        </div><!-- /.col-xs-4 -->
+                                Shopping Cart
+
+                                <!--<input class="todo-search-field" type="search" value="" placeholder="Search" />-->
+                            </div>
+                            <ul>
+                                <li class="todo-done">
+                                    <div class="todo-icon fui-user"></div>
+                                    <div class="todo-content">
+                                        <h4 class="todo-name">
+                                            Meet <strong>Adrian</strong> at <strong>6pm</strong>
+                                        </h4>
+                                        Times Square
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="todo-icon fui-list"></div>
+                                    <div class="todo-content">
+                                        <h4 class="todo-name">
+                                            Chat with <strong>V.Kudinov</strong>
+                                        </h4>
+                                        Skype
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="todo-icon fui-eye"></div>
+                                    <div class="todo-content">
+                                        <h4 class="todo-name">
+                                            Watch <strong>Iron Man</strong>
+                                        </h4>
+                                        1998
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="todo-icon fui-time"></div>
+                                    <div class="todo-content">
+                                        <h4 class="todo-name">
+                                            Fix bug on a <strong>Website</strong>
+                                        </h4>
+                                        As soon as possible
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <div class="todo-checkout">
+                                Checkout Now
+                            </div>
+                        </div><!-- /.todo -->
+                    </div><!-- /.col-xs-4 -->
+                </div>
+            </div>
+        </div>
+        <div id="body-outer">
+
+            <div id="body-inner">
+                <div id="shop_main_title">
+                    <div id="prod_name">
+                        DVDs
                     </div>
+                    <div id="sort">
+                        sort here
+                    </div>
+
+                </div>
+                <section id="products">
+
+                </section>
+            </div>
+            <div id="paging">
+                <div id="page" class="pagify">
+
+                    <ul id="pagification" class="pagination">
+                        <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+                        <li class="active"><a href="#fakelink">1</a></li>
+                        <li><a href="#fakelink">2</a></li>
+                        <li><a href="#fakelink">3</a></li>
+                        <li><a href="#fakelink">4</a></li>
+                        <li><a href="#fakelink">5</a></li>
+                        <li><a href="#fakelink">6</a></li>
+                        <li><a href="#fakelink">7</a></li>
+                        <li><a href="#fakelink">8</a></li>
+                        <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+                    </ul>
+
                 </div>
             </div>
-        </div>
-        <div id="shopmain">
-            <div id="shop_main_title">
-                <div id="prod_name">
-                    DVDs
-                </div>
-                <div id="sort">
 
-                </div>
-
-            </div>
-
-            <section id="products">
-
-            </section>
-        </div>
-    </div>
-    <div id="paginify">
-        <div id="page">
 
         </div>
     </div>
+
+
+
+
+
+
 </section>
 
 
+
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/search.js"></script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="dist/js/vendor/video.js"></script>-->
+<!--<script src="dist/js/flat-ui.min.js"></script>-->
+<script src="js/application.js"></script>
+
 </html>
