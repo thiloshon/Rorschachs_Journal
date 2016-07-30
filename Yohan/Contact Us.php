@@ -48,7 +48,7 @@
             <td><textarea name = "comments" rows="6" style = "height: 200px; width: 360px;resize: none;" required="true"></textarea></td>
         </tr>
         <tr>
-            <td><input type = "submit" value = "Submit" style = "margin-left: 200px;"></td>
+            <td><input type = "submit" value = "Submit" styl = "margin-left: 200px;"></td>
         </tr>
         </table>
     </form>
