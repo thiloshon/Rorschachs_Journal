@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Contact Us !!</h1>
-    <form>
+    <form name = "contactus_form" onsubmit="return validate()" action="connectDB.php" method="post">
         <table>
         <tr>
            <td>Full Name : <input type = "text" name = "name"  size = "30" style = "height:30px; margin-left:29px;" required="true"><br/></td>
@@ -27,7 +27,7 @@
             </td>
         </tr>
         <tr>
-            <td>Would you like to receive email notifications for new movie releases? <input type = "checkbox" name = "email" value = "notify"></td>
+            <td>Would you like to receive email notifications for new movie releases? <input type = "checkbox" id = "email" value = "notify"></td>
 
         </tr>
         <tr>
@@ -53,6 +53,11 @@
         </table>
     </form>
 </body>
+<script type="text/javascript">
+    function validate(){
+        if (document.getElementById("notify").checked) =
+    }
+</script>
 <style>
 a:link, a:visited {
     background-color: #f44336;
