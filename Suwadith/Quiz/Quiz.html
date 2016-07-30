@@ -14,35 +14,35 @@
 
 <section>
 
-    <h3 id="timer" class="hidden" style="text-align: right;padding-right: 2%;padding-top: 2%;"></h3>
 
-    <div id="startMenu" class="start">
-
+    <div id="startMenu" class="startMenuClass">
         <h1>Quiz</h1>
-
         <h2>Rules</h2>
 
         <ul>
-            <li><p>10 Football Quiz will be given to you</p></li>
-            <li><p>For each correct answers 2 points will be given and for a wrong answer 1 point will get detected</p>
-            </li>
-            <li><p>If the answer is correct background colour changes to green else it changes to red </p></li>
-            <li><p>This game is time limited and it should be finished within 60 seconds</p></li>
-            <li><p>Points will be given after the game time</p></li>
+            <li><p>10 Simple Questions regarding the Film industry will be given to you.</p></li>
+            <li><p>All you'll have to do is to choose the correct answer from the 4 options that we give</p></li>
+            <li><p>For Each correct answer you'll receive 2 points</p></li>
+            <li><p>For Each wrong answer your mark will be deducted by 1</p></li>
+            <li><p>You have to complete this game within 120 seconds</p></li>
+            <li><p>Good Luck!</p></li>
         </ul>
 
         <div class="centerAlign">
-            </br><input type="button" id="startButton" onclick="start()" value="START" class="buttonStyle">
+            </br><input type="button" id="startButton" onclick="start()" value="start" class="buttonStyle">
         </div>
 
     </div>
 
+    <div class="rightAlign">
+    <h3 id="timer" class="hide"></h3>
+    </div>
 
-    <div class="contentdiv" class="hidden">
-        <div id="questionMenu" class="centerDiv">
+    <div class="contentdiv" class="hide">
+        <div id="questionMenu" class="leftAlign">
             <h3 id="questions"></h3>
-            <div id="radioButtons" class="hidden">
-                <table align="center">
+            <div id="radioButtons" class="hide">
+                <table align="left">
                     <tr>
                         <td><input type="radio" name="questions" value="1"><h4 id="q_1"></h4></br></td>
                     </tr>
@@ -60,7 +60,7 @@
         </div>
     </div>
     <div class="contentdiv">
-        <div id="resultsMenu" class="hidden">
+        <div id="resultsMenu" class="hide">
             <h2 id="results"></h2>
 
             <h3 id="ques_0"></h3><h4 id="answ_0"></h4></br><h4 id="giv_0"></h4>
@@ -75,6 +75,8 @@
             <h3 id="ques_9"></h3><h4 id="answ_9"></h4></br><h4 id="giv_9"></h4>
         </div>
     </div>
+
+
 
 </section>
 

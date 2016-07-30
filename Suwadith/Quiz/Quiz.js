@@ -1,34 +1,16 @@
-/*
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <title>Quiz</title>
-    </head>
-    <body>
 
-    </body>
-    <style>
+var quiz_button = "<input id='startButton' type=\"button\" onclick=\"startQuestions()\" value=\"Next\" class=\"buttonStyle\">";
 
-</style>
-<script>
-var quiz_button = "<input id='startQuiz' type=\"button\" onclick=\"startQuestions()\" value=\"Next\" class=\"btnDesign\">";
-//var des_button = "<center><input id='startDes' type=\"button\" onclick=\"startQuiz()\" value=\"Start Game\" class=\"btnDesign\"></center>";
-function startQuiz(){
-    document.getElementById("rules").setAttribute('class','hidden');
-    document.getElementById("radioButtons").setAttribute('class', 'visible');
-    document.getElementById("timer").setAttribute('class', 'visible');
+
+function start(){
+    document.getElementById("startMenu").setAttribute('class','hide');
+    document.getElementById("radioButtons").setAttribute('class', 'show');
+    document.getElementById("timer").setAttribute('class', 'show');
     document.getElementById("questionMenu").innerHTML += quiz_button;
     startQuestions();
     timer();
 }
-function description() {
-    //Visible Start Menu division (Title,Button)
-    document.getElementById("startMenu").style.display = 'none';
-    document.getElementById("rules").setAttribute('class', 'visible');
-    //document.getElementById("rules").innerHTML += des_button;
 
-}
 
 var counter = 0;
 var questions = [
@@ -73,6 +55,7 @@ function startQuestions() {
         counter++;
     }
 }
+
 function displayQandA(answers) {
     document.getElementById("questions").innerHTML = questions[counter];
     document.getElementById("q_1").innerHTML = answers[0];
@@ -80,6 +63,7 @@ function displayQandA(answers) {
     document.getElementById("q_3").innerHTML = answers[2];
     document.getElementById("q_4").innerHTML = answers[3];
 }
+
 function checkAnswers() {
     var c = 0;
     var answers = document.getElementsByName('questions');
@@ -101,9 +85,10 @@ function checkAnswers() {
         //changeBGToBlue();
     }
 }
+
 function showMarks() {
-    document.getElementById("timer").setAttribute('class', 'hidden');
-    document.getElementById("questionMenu").setAttribute('class', 'hidden');
+    document.getElementById("timer").setAttribute('class', 'hide');
+    document.getElementById("questionMenu").setAttribute('class', 'hide');
     document.getElementById("resultsMenu").setAttribute('class', 'M_Title');
 
     var CorrectAnswers = ["2","2","4","1","4","1","2","4","1","2"];
@@ -161,6 +146,7 @@ function showMarks() {
     }
     document.getElementById("results").innerHTML = "You Mark is "+ marks;
 }
+
 function timer() {
     var seconds_left = 60;
     var interval = setInterval(function() {
@@ -176,6 +162,7 @@ function timer() {
         }
     }, 1000);
 }
+
 function changeBGToRed() {
     var redColor = ["#ff0000","#e50000","#cc0000","#b20000","#990000","#7f0000","#660000","#4c0000","#330000","#190000","#000000"];
     var counter = 0;
@@ -212,5 +199,3 @@ function changeBGToBlue() {
         }
     }, 40);
 }
-</script>
-</html>*/

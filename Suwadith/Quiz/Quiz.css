@@ -10,7 +10,7 @@ html{
 body{
     margin: 0 auto;
     padding: 2em 2em 10em;
-    max-width: 800px;
+    max-width: 1000px;
     line-height: 1.5em;
     background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, yellow), color-stop(1, green));
     /* Android 2.3 */
@@ -45,19 +45,19 @@ h1{
 }
 
 
-/*
-@font-face {
+
+/*@font-face {
     font-family: 'Gotham';
     src: url('fonts/Gotham Bold.otf');
 }
 @font-face {
     font-family: 'Gotham-Light';
     src: url('fonts/Gotham XLight.otf');
-}
-body{
+}*/
+/*body{
     background-color: black;
-}
-.btnDesign{
+}*/
+/*.btnDesign{
     background-color: #f2eb14;
     color: white;
     border: 2px solid #ffff00;
@@ -79,7 +79,7 @@ body{
 .centerDiv {
     margin: auto;
     text-align: center;
-}
+}*/
 .M_Title{
     text-align: center;
     padding-top: 12%;
@@ -111,13 +111,24 @@ li{
     padding-left: 6%;
     padding-top: 2%;
 }
-.hidden {
+.hide {
     display: none;
     margin: auto;
     text-align: left;
 }
-.visible {
+.show {
     display: block;
     margin: auto;
     text-align: left;
-}*/
+}
+
+
+.rightAlign{
+    text-align: right;
+
+}
+
+.leftAlign{
+    text-align: right;
+
+}
