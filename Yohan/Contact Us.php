@@ -55,7 +55,9 @@
 </body>
 <script type="text/javascript">
     function validate(){
-        if (document.getElementById("notify").checked) =
+        if (document.getElementById("email").checked){
+
+        }
     }
 </script>
 <style>
