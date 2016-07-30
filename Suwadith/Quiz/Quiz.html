@@ -3,21 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Quiz</title>
-    <!--<link rel="stylesheet" type="text/css" href="Quiz.css">-->
+    <link rel="stylesheet" type="text/css" href="Quiz.css">
     <script src="Quiz.js"></script>
 
 </head>
+
 <body>
 
-<header><h1>Quiz</h1></header>
+<Header></Header>
 
 <section>
 
-    <p>
+    <h3 id="timer" class="hidden" style="text-align: right;padding-right: 2%;padding-top: 2%;"></h3>
 
-        <button onClick="start();">start the quiz<img src="Button.gif" width="16px" id="ImageButton1"></button>
+    <div id="startMenu" class="start">
 
-    </p>
+        <h1>Quiz</h1>
+
+        <h2>Rules</h2>
+
+        <ul>
+            <li><p>10 Football Quiz will be given to you</p></li>
+            <li><p>For each correct answers 2 points will be given and for a wrong answer 1 point will get detected</p>
+            </li>
+            <li><p>If the answer is correct background colour changes to green else it changes to red </p></li>
+            <li><p>This game is time limited and it should be finished within 60 seconds</p></li>
+            <li><p>Points will be given after the game time</p></li>
+        </ul>
+
+        <div class="centerAlign">
+            </br><input type="button" id="startButton" onclick="start()" value="START" class="buttonStyle">
+        </div>
+
+    </div>
+
+
+    <div class="contentdiv" class="hidden">
+        <div id="questionMenu" class="centerDiv">
+            <h3 id="questions"></h3>
+            <div id="radioButtons" class="hidden">
+                <table align="center">
+                    <tr>
+                        <td><input type="radio" name="questions" value="1"><h4 id="q_1"></h4></br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="questions" value="2"><h4 id="q_2"></h4></br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="questions" value="3"><h4 id="q_3"></h4></br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="questions" value="4"><h4 id="q_4"></h4></br></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="contentdiv">
+        <div id="resultsMenu" class="hidden">
+            <h2 id="results"></h2>
+
+            <h3 id="ques_0"></h3><h4 id="answ_0"></h4></br><h4 id="giv_0"></h4>
+            <h3 id="ques_1"></h3><h4 id="answ_1"></h4></br><h4 id="giv_1"></h4>
+            <h3 id="ques_2"></h3><h4 id="answ_2"></h4></br><h4 id="giv_2"></h4>
+            <h3 id="ques_3"></h3><h4 id="answ_3"></h4></br><h4 id="giv_3"></h4>
+            <h3 id="ques_4"></h3><h4 id="answ_4"></h4></br><h4 id="giv_4"></h4>
+            <h3 id="ques_5"></h3><h4 id="answ_5"></h4></br><h4 id="giv_5"></h4>
+            <h3 id="ques_6"></h3><h4 id="answ_6"></h4></br><h4 id="giv_6"></h4>
+            <h3 id="ques_7"></h3><h4 id="answ_7"></h4></br><h4 id="giv_7"></h4>
+            <h3 id="ques_8"></h3><h4 id="answ_8"></h4></br><h4 id="giv_8"></h4>
+            <h3 id="ques_9"></h3><h4 id="answ_9"></h4></br><h4 id="giv_9"></h4>
+        </div>
+    </div>
 
 </section>
 
@@ -25,3 +82,6 @@
 
 </body>
 </html>
+
+<!--
+-->
