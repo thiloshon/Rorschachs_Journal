@@ -102,20 +102,19 @@
 }
 #navbar-header {
     
+    margin-right: -30px;
     margin-left: 0px;
     margin-bottom: 0px;
     z-index: 10;
     display: block;
     float: left;
-    width: 300px;
+    width: 15%;
 }
+
 #searchbox {
-    width: 30%;
-}
-#search {
 
     margin-left: 70px;
-    margin-top: 60px;
+    margin-top: 40px;
     display: block;
     float: left;
     width: 50%;
@@ -227,7 +226,7 @@
     width: 111%;
 }
 
-#container {
+#containerOuter {
     z-index: 10;
 }
 
