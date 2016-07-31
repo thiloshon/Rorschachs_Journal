@@ -21,7 +21,7 @@
         <tr></tr>
         <tr>
             <td>Email Address : <input type = "text" name = "email"  size="30" style = "height:30px">
-                <div class="tooltip"> <img src ="http://localhost/Rorsach's Journal/Yohan/information.png" alt="heart img" width="22px" height="22px" align="middle"/>
+                <div class="tooltip"> <img src ="http://localhost/Rorsach's Journal/Yohan/info.jpeg" alt="heart img" width="22px" height="22px" align="middle"/>
                     <span class="tooltiptext">Enter address as somebody@mymail.com </span>
                 </div>
             </td>
