@@ -5,83 +5,144 @@
     <title>Quiz</title>
     <link rel="stylesheet" type="text/css" href="Quiz.css">
     <script src="Quiz.js"></script>
-
 </head>
-
 <body>
 
-<Header></Header>
+<div id="startMenu" class="startMenuClass">
+    <h1>Quiz</h1>
+    <h2>Rules</h2>
+    <ul>
+        <li><p>10 Simple Questions regarding the Film industry will be given to you.</p></li>
+        <li><p>All you'll have to do is to choose the correct answer from the 4 options that we give</p></li>
+        <li><p>For Each correct answer you'll receive 2 points</p></li>
+        <li><p>For Each wrong answer your mark will be deducted by 1</p></li>
+        <li><p>You have to complete this game within 120 seconds</p></li>
+        <li><p>Good Luck!</p></li>
+    </ul>
+    <div class="centerAlign">
+        </br><input type="button" id="startButton" onclick="start()" value="start" class="buttonStyle">
+    </div>
+</div>
 
-<section>
+<h3 id="timer" class="hide"></h3>
 
-    <h3 id="timer" class="hidden" style="text-align: right;padding-right: 2%;padding-top: 2%;"></h3>
+<div id="questionMenu" class="centerAlign">
+    <h3 id="questions"></h3>
+    <div id="radioButtons" class="hide">
+        <p class="question" id="question1">1. Which of the following classic films was set in unoccupied Africa during the beginning of World War II?</p>
 
-    <div id="startMenu" class="start">
-
-        <h1>Quiz</h1>
-
-        <h2>Rules</h2>
-
-        <ul>
-            <li><p>10 Football Quiz will be given to you</p></li>
-            <li><p>For each correct answers 2 points will be given and for a wrong answer 1 point will get detected</p>
-            </li>
-            <li><p>If the answer is correct background colour changes to green else it changes to red </p></li>
-            <li><p>This game is time limited and it should be finished within 60 seconds</p></li>
-            <li><p>Points will be given after the game time</p></li>
+        <ul class="answers">
+            <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Citizen Kane</label><br/>
+            <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Casablanca</label><br/>
+            <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Key Largo</label><br/>
+            <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">The Maltese Falcon</label><br/>
         </ul>
 
+
+        <p class="question" id="question2">2. Professor Moriaty is the criminal mastermind found in which series of detective books and movies?</p>
+
+        <ul class="answers">
+            <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Hercule Poirot</label><br/>
+            <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Sherlock Holmes</label><br/>
+            <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Miss Marple</label><br/>
+            <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Ellery Queen</label><br/>
+        </ul>
+
+        <p class="question" id="question3">3. Name the winner of the 2001 Academy Award for Best Picture.</p>
+
+        <ul class="answers">
+            <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Gosford Park</label><br/>
+            <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">A Beautiful Mind</label><br/>
+            <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">The Fellowship of the Ring</label><br/>
+            <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Moulin Rouge!</label><br/>
+        </ul>
+
+        <p class="question" id="question4">4. What is the name of the quick-tempered monarch featured in "Alice in Wonderland"?</p>
+
+        <ul class="answers">
+            <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Queen of Hearts</label><br/>
+            <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Queen of Spades</label><br/>
+            <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Queen of Clubs</label><br/>
+            <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Queen of Diamonds</label><br/>
+        </ul>
+
+        <p class="question" id="question5">5. Which of the following films does not feature the Academy Award winning actor Tom Hanks?</p>
+
+        <ul class="answers">
+            <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">You've Got Mail</label><br/>
+            <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">The Curious Case of Benjamin Button</label><br/>
+            <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Forrest Gump</label><br/>
+            <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">The Green Mile</label><br/>
+        </ul>
+
+        <p class="question" id="question6">6. Finish the title to this 2005 Disney animated film - ?????? Little.</p>
+
+        <ul class="answers">
+            <input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Chicken</label><br/>
+            <input type="radio" name="q6" value="b" id="q6b"><label for="q6b">Sheep</label><br/>
+            <input type="radio" name="q6" value="c" id="q6c"><label for="q6c">Donkey</label><br/>
+            <input type="radio" name="q6" value="d" id="q6d"><label for="q6d">Penguin</label><br/>
+        </ul>
+
+        <p class="question" id="question7">7. Name the winner of the 2002 Academy Award for Best Picture.</p>
+
+        <ul class="answers">
+            <input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Gangs of New York</label><br/>
+            <input type="radio" name="q7" value="b" id="q7b"><label for="q7b">Chicago</label><br/>
+            <input type="radio" name="q7" value="c" id="q7c"><label for="q7c">The Hours</label><br/>
+            <input type="radio" name="q7" value="d" id="q7d"><label for="q7d">The Pianist</label><br/>
+        </ul>
+
+        <p class="question" id="question8">8. Modeled after Robert the Doll, "Chucky" is the villain of which film series?</p>
+
+        <ul class="answers">
+            <input type="radio" name="q8" value="a" id="q8a"><label for="q8a">Demonic Toys</label><br/>
+            <input type="radio" name="q8" value="b" id="q8b"><label for="q8b">Dolly Dearest</label><br/>
+            <input type="radio" name="q8" value="c" id="q8c"><label for="q8c">Child's Play</label><br/>
+            <input type="radio" name="q8" value="d" id="q8d"><label for="q8d">Fright Night</label><br/>
+        </ul>
+
+        <p class="question" id="question9">9. What 2009 Disney film became the second animated movie ever to be nominated for a Best Picture Academy Award?</p>
+
+        <ul class="answers">
+            <input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Up</label><br/>
+            <input type="radio" name="q9" value="b" id="q9b"><label for="q9b">Tangled</label><br/>
+            <input type="radio" name="q9" value="c" id="q9c"><label for="q9c">Finding Nemo</label><br/>
+            <input type="radio" name="q9" value="d" id="q9d"><label for="q9d">Toy Story 2</label><br/>
+        </ul>
+
+        <p class="question" id="question10">10. Name the winner of the 2003 Academy Award for Best Picture.</p>
+
+        <ul class="answers">
+            <input type="radio" name="q10" value="a" id="q10a"><label for="q10a">Mystic River</label><br/>
+            <input type="radio" name="q10" value="b" id="q10b"><label for="q10b">Seabiscuit</label><br/>
+            <input type="radio" name="q10" value="c" id="q10c"><label for="q10c">Lost in Translation</label><br/>
+            <input type="radio" name="q10" value="d" id="q10d"><label for="q10d">The Return of the King</label><br/>
+        </ul>
         <div class="centerAlign">
-            </br><input type="button" id="startButton" onclick="start()" value="START" class="buttonStyle">
-        </div>
-
-    </div>
-
-
-    <div class="contentdiv" class="hidden">
-        <div id="questionMenu" class="centerDiv">
-            <h3 id="questions"></h3>
-            <div id="radioButtons" class="hidden">
-                <table align="center">
-                    <tr>
-                        <td><input type="radio" name="questions" value="1"><h4 id="q_1"></h4></br></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="questions" value="2"><h4 id="q_2"></h4></br></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="questions" value="3"><h4 id="q_3"></h4></br></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="questions" value="4"><h4 id="q_4"></h4></br></td>
-                    </tr>
-                </table>
-            </div>
+            </br><input type="button" id="endButton" onclick="showMarks()" value="end" class="buttonStyle">
         </div>
     </div>
-    <div class="contentdiv">
-        <div id="resultsMenu" class="hidden">
-            <h2 id="results"></h2>
+</div>
 
-            <h3 id="ques_0"></h3><h4 id="answ_0"></h4></br><h4 id="giv_0"></h4>
-            <h3 id="ques_1"></h3><h4 id="answ_1"></h4></br><h4 id="giv_1"></h4>
-            <h3 id="ques_2"></h3><h4 id="answ_2"></h4></br><h4 id="giv_2"></h4>
-            <h3 id="ques_3"></h3><h4 id="answ_3"></h4></br><h4 id="giv_3"></h4>
-            <h3 id="ques_4"></h3><h4 id="answ_4"></h4></br><h4 id="giv_4"></h4>
-            <h3 id="ques_5"></h3><h4 id="answ_5"></h4></br><h4 id="giv_5"></h4>
-            <h3 id="ques_6"></h3><h4 id="answ_6"></h4></br><h4 id="giv_6"></h4>
-            <h3 id="ques_7"></h3><h4 id="answ_7"></h4></br><h4 id="giv_7"></h4>
-            <h3 id="ques_8"></h3><h4 id="answ_8"></h4></br><h4 id="giv_8"></h4>
-            <h3 id="ques_9"></h3><h4 id="answ_9"></h4></br><h4 id="giv_9"></h4>
-        </div>
-    </div>
+<!--var CorrectAnswers = ["2", "2", "2", "1", "2", "1", "2", "3", "1", "4"];-->
 
-</section>
+    <!--<div id="resultsMenu" class="hide">
+        <h2 id="results"></h2>
 
-<footer></footer>
+        <h3 id="ques_0"></h3><h4 id="answ_0"></h4></br><h4 id="giv_0"></h4>
+        <h3 id="ques_1"></h3><h4 id="answ_1"></h4></br><h4 id="giv_1"></h4>
+        <h3 id="ques_2"></h3><h4 id="answ_2"></h4></br><h4 id="giv_2"></h4>
+        <h3 id="ques_3"></h3><h4 id="answ_3"></h4></br><h4 id="giv_3"></h4>
+        <h3 id="ques_4"></h3><h4 id="answ_4"></h4></br><h4 id="giv_4"></h4>
+        <h3 id="ques_5"></h3><h4 id="answ_5"></h4></br><h4 id="giv_5"></h4>
+        <h3 id="ques_6"></h3><h4 id="answ_6"></h4></br><h4 id="giv_6"></h4>
+        <h3 id="ques_7"></h3><h4 id="answ_7"></h4></br><h4 id="giv_7"></h4>
+        <h3 id="ques_8"></h3><h4 id="answ_8"></h4></br><h4 id="giv_8"></h4>
+        <h3 id="ques_9"></h3><h4 id="answ_9"></h4></br><h4 id="giv_9"></h4>
+    </div>-->
+
+
 
 </body>
 </html>
-
-<!--
--->
