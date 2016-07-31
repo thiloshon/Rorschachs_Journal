@@ -20,7 +20,7 @@
         <li><p>Good Luck!</p></li>
     </ul>
     <div class="centerAlign">
-        </br><input type="button" id="startButton" onclick="start()" value="start" class="buttonStyle">
+        </br><input type="button" id="startButton" onclick="start()" value="Start" class="buttonStyle">
     </div>
 </div>
 
@@ -29,8 +29,8 @@
 <div id="questionMenu" class="centerAlign">
     <h3 id="questions"></h3>
     <div id="radioButtons" class="hide">
-        <p class="question" id="question1">1. Which of the following classic films was set in unoccupied Africa during the beginning of World War II?</p>
-
+        <p class="question" id="question1">1. Which of the following classic films was set in unoccupied Africa during
+            the beginning of World War II?</p>
         <ul class="answers">
             <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Citizen Kane</label><br/>
             <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Casablanca</label><br/>
@@ -39,7 +39,8 @@
         </ul>
 
 
-        <p class="question" id="question2">2. Professor Moriaty is the criminal mastermind found in which series of detective books and movies?</p>
+        <p class="question" id="question2">2. Professor Moriaty is the criminal mastermind found in which series of
+            detective books and movies?</p>
 
         <ul class="answers">
             <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Hercule Poirot</label><br/>
@@ -57,7 +58,8 @@
             <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Moulin Rouge!</label><br/>
         </ul>
 
-        <p class="question" id="question4">4. What is the name of the quick-tempered monarch featured in "Alice in Wonderland"?</p>
+        <p class="question" id="question4">4. What is the name of the quick-tempered monarch featured in "Alice in
+            Wonderland"?</p>
 
         <ul class="answers">
             <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Queen of Hearts</label><br/>
@@ -66,11 +68,13 @@
             <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Queen of Diamonds</label><br/>
         </ul>
 
-        <p class="question" id="question5">5. Which of the following films does not feature the Academy Award winning actor Tom Hanks?</p>
+        <p class="question" id="question5">5. Which of the following films does not feature the Academy Award winning
+            actor Tom Hanks?</p>
 
         <ul class="answers">
             <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">You've Got Mail</label><br/>
-            <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">The Curious Case of Benjamin Button</label><br/>
+            <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">The Curious Case of Benjamin
+            Button</label><br/>
             <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Forrest Gump</label><br/>
             <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">The Green Mile</label><br/>
         </ul>
@@ -93,7 +97,8 @@
             <input type="radio" name="q7" value="d" id="q7d"><label for="q7d">The Pianist</label><br/>
         </ul>
 
-        <p class="question" id="question8">8. Modeled after Robert the Doll, "Chucky" is the villain of which film series?</p>
+        <p class="question" id="question8">8. Modeled after Robert the Doll, "Chucky" is the villain of which film
+            series?</p>
 
         <ul class="answers">
             <input type="radio" name="q8" value="a" id="q8a"><label for="q8a">Demonic Toys</label><br/>
@@ -102,7 +107,8 @@
             <input type="radio" name="q8" value="d" id="q8d"><label for="q8d">Fright Night</label><br/>
         </ul>
 
-        <p class="question" id="question9">9. What 2009 Disney film became the second animated movie ever to be nominated for a Best Picture Academy Award?</p>
+        <p class="question" id="question9">9. What 2009 Disney film became the second animated movie ever to be
+            nominated for a Best Picture Academy Award?</p>
 
         <ul class="answers">
             <input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Up</label><br/>
@@ -119,29 +125,30 @@
             <input type="radio" name="q10" value="c" id="q10c"><label for="q10c">Lost in Translation</label><br/>
             <input type="radio" name="q10" value="d" id="q10d"><label for="q10d">The Return of the King</label><br/>
         </ul>
+
+
         <div class="centerAlign">
-            </br><input type="button" id="endButton" onclick="showMarks()" value="end" class="buttonStyle">
+            </br><input type="button" id="endButton" onclick="showMarks()" value="Finish" class="buttonStyle">
         </div>
     </div>
 </div>
 
-<!--var CorrectAnswers = ["2", "2", "2", "1", "2", "1", "2", "3", "1", "4"];-->
+<div id="resultsMenu" class="hide">
+    <h2 id="results">Results</h2>
 
-    <!--<div id="resultsMenu" class="hide">
-        <h2 id="results"></h2>
+    <h5 id="displayMarks"></h5>
+    <h3 id="displayQuestion1"></h3><h4 id="displayAnswer1"></h4>
+    <h3 id="displayQuestion2"></h3><h4 id="displayAnswer2"></h4>
+    <h3 id="displayQuestion3"></h3><h4 id="displayAnswer3"></h4>
+    <h3 id="displayQuestion4"></h3><h4 id="displayAnswer4"></h4>
+    <h3 id="displayQuestion5"></h3><h4 id="displayAnswer5"></h4>
+    <h3 id="displayQuestion6"></h3><h4 id="displayAnswer6"></h4>
+    <h3 id="displayQuestion7"></h3><h4 id="displayAnswer7"></h4>
+    <h3 id="displayQuestion8"></h3><h4 id="displayAnswer8"></h4>
+    <h3 id="displayQuestion9"></h3><h4 id="displayAnswer9"></h4>
+    <h3 id="displayQuestion10"></h3><h4 id="displayAnswer10"></h4>
 
-        <h3 id="ques_0"></h3><h4 id="answ_0"></h4></br><h4 id="giv_0"></h4>
-        <h3 id="ques_1"></h3><h4 id="answ_1"></h4></br><h4 id="giv_1"></h4>
-        <h3 id="ques_2"></h3><h4 id="answ_2"></h4></br><h4 id="giv_2"></h4>
-        <h3 id="ques_3"></h3><h4 id="answ_3"></h4></br><h4 id="giv_3"></h4>
-        <h3 id="ques_4"></h3><h4 id="answ_4"></h4></br><h4 id="giv_4"></h4>
-        <h3 id="ques_5"></h3><h4 id="answ_5"></h4></br><h4 id="giv_5"></h4>
-        <h3 id="ques_6"></h3><h4 id="answ_6"></h4></br><h4 id="giv_6"></h4>
-        <h3 id="ques_7"></h3><h4 id="answ_7"></h4></br><h4 id="giv_7"></h4>
-        <h3 id="ques_8"></h3><h4 id="answ_8"></h4></br><h4 id="giv_8"></h4>
-        <h3 id="ques_9"></h3><h4 id="answ_9"></h4></br><h4 id="giv_9"></h4>
-    </div>-->
-
+</div>
 
 
 </body>
