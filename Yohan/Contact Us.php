@@ -1,9 +1,9 @@
-/**
+<!--/**
  * Created by PhpStorm.
  * User: Yohan Punchihewa
  * Date: 7/30/2016
  * Time: 1:01 AM
- */
+ */-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,22 +21,22 @@
         <tr></tr>
         <tr>
             <td>Email Address : <input type = "text" name = "email"  size="30" style = "height:30px">
-                <div class="tooltip"> <img src ="http://localhost/web/pages/contImg/information.png" alt="heart img" width="22px" height="22px" align="middle"/>
+                <div class="tooltip"> <img src ="http://localhost/Rorsach's Journal/Yohan/information.png" alt="heart img" width="22px" height="22px" align="middle"/>
                     <span class="tooltiptext">Enter address as somebody@mymail.com </span>
                 </div>
             </td>
         </tr>
         <tr>
-            <td>Would you like to receive email notifications for new movie releases? <input type = "checkbox" id = "email" value = "notify"></td>
+            <td>Would you like to receive email notifications for new movie releases? <input type = "checkbox" id = "notify" value = "notification"></td>
 
         </tr>
         <tr>
             <td>Rate our site : <br/>
-            <input type="radio" name = "ratings" value = "rate1">Bad
-                <input type="radio" name = "ratings" value = "rate2">Meh
-                <input type="radio" name = "ratings" value = "rate3">Average
-                <input type="radio" name = "ratings" value = "rate4">Good
-                <input type="radio" name = "ratings" value = "rate5">Awesome</td>
+            <input type="radio" id = "rate1" name = "ratings" value = "bad">Bad
+                <input type="radio" id = "rate2" name = "ratings" value = "meh">Meh
+                <input type="radio" id = "rate3" name = "ratings" value = "average">Average
+                <input type="radio" id = "rate4" name = "ratings" value = "good">Good
+                <input type="radio" id = "rate5" name = "ratings" value = "awesome">Awesome</td>
         </tr>
         <tr>
 
@@ -55,9 +55,37 @@
 </body>
 <script type="text/javascript">
     function validate(){
-        if (document.getElementById("email").checked){
-
+        if (document.getElementById("notify").checked) { // if the checkbox is ticked, the email should be validated
+            var x = document.forms["contactus_form"]["email"].value;
+            var atPos = x.indexOf("@"); //store the index of the "@" symbol in the email address entered
+            var dotPos = x.lastIndexOf("."); //store the index of the "." symbol in the email address after the host name entered
+            if (atPos < 1 || dotPos < atPos + 2 || dotPos + 2 >= x.length){
+                alert("Please enter a valid email address");
+                x.focus;
+                return false;
+            }
         }
+
+        //validate rating to not be left blank
+        if (document.getElementById("rate1") == "" || document.getElementById("rate2") == "" || document.getElementById("rate3") == "" || document.getElementById("rate4") == "" || document.getElementById("rate5") == "") {
+            alert("Please dont forget to rate us");
+            return false;
+
+        }else{
+            var fullname = document.forms["contactus_form"]["name"].value;
+            var comment = document.forms["contactus_form"]["comments"].value;
+            var rating = document.forms["contactus_form"]["ratings"].value;
+            var x;
+            var sent = confirm("Hi "+ fullname + ", here is a summary of your ratings and comments entered :" + "\n You rated : " + rating + "\n Your comments are : " +  comment);
+            if ( sent == true){ //if true, then the page is redirected and the data is sent to the server to be stored in the database
+                return true;
+            }else{ //to prevent redirecting and stay on the same page
+                alert("You cancelled this operation");
+                return false;
+            }
+        }
+
+
     }
 </script>
 <style>
