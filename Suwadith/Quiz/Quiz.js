@@ -251,8 +251,6 @@ function checkAnswers() {
     } else if (marks >= 10) {
         document.body.style.backgroundColor = "lightseagreen";
     } else if (marks >= 5) {
-        document.body.style.backgroundColor = "orange";
-    } else if (marks > 0) {
         document.body.style.backgroundColor = "yellow";
     } else {
         document.body.style.backgroundColor = "indianred";
