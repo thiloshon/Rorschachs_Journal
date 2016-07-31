@@ -24,7 +24,7 @@ Primary style
 body {
   font-size: 100%;
   font-family: Lato, "PT Sans", sans-serif;
-  color: #f8f7ee;
+  color: #d7d1f8;
   /*background-color: #29324e;*/
 }
 
@@ -257,7 +257,7 @@ Main components
 }
 
 .cd-tabs-content {
-  background: #ffffff;
+  background: #e4eaff;
 }
 .cd-tabs-content li {
   display: none;
