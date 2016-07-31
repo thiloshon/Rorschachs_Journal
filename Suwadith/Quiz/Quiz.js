@@ -16,20 +16,24 @@ function showMarks() {
     document.getElementById("timer").setAttribute('class', 'hide');
     document.getElementById("resultsMenu").setAttribute('class', 'show');
     checkAnswers();
+    seconds=0;
 }
 
+
+var seconds = 0;
 function timer() {
-    var seconds = 100;
-    var interval = setInterval(function () {
-        document.getElementById('timer').innerHTML = "Seconds Left " + --seconds;
+        seconds = 10;
+        var interval = setInterval(function () {
+            document.getElementById('timer').innerHTML = "Seconds Left " + --seconds;
 
-        if (seconds == 0) {
-            document.getElementById('timer').innerHTML = 'Time up';
-            showMarks();
-            clearInterval(interval);
-        }
-    }, 1000);
-}
+            if (seconds == 0) {
+                document.getElementById('timer').innerHTML = 'Time up';
+                clearInterval(interval);
+                showMarks();
+            }
+        }, 1000);
+    }
+
 
 var marks = 0;
 var CorrectAnswers = ["b", "b", "b", "a", "b", "a", "b", "c", "a", "d"];
@@ -103,12 +107,12 @@ function checkAnswers() {
                 document.getElementById("displayAnswer4").innerHTML = "you've chosen the correct answer. It's Queen of Hearts";
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer4").innerHTML = "Incorrect answer. Correct Answer is A Beautiful Mind";
+                document.getElementById("displayAnswer4").innerHTML = "Incorrect answer. Correct Answer is It's Queen of Hearts";
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer4").innerHTML = "You didn't choose an answer. Correct Answer is A Beautiful Mind";
+            document.getElementById("displayAnswer4").innerHTML = "You didn't choose an answer. Correct Answer is It's Queen of Hearts";
             marks += 0;
         }
     }
@@ -252,8 +256,10 @@ function checkAnswers() {
         document.body.style.backgroundColor = "lightseagreen";
     } else if (marks >= 5) {
         document.body.style.backgroundColor = "yellow";
-    } else {
+    } else if(marks >= 0){
         document.body.style.backgroundColor = "indianred";
+    }else{
+        marks=0;
     }
 
     var m = marks.toString();
