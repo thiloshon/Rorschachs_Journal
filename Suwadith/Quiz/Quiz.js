@@ -22,7 +22,7 @@ function showMarks() {
 
 var seconds = 0;
 function timer() {
-        seconds = 10;
+        seconds = 100;
         var interval = setInterval(function () {
             document.getElementById('timer').innerHTML = "Seconds Left " + --seconds;
 
