@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>THE film CART</title>
     <link rel="stylesheet" href="css/cart_Interface.css">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/googleapi.css">
+
+    <!--<link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/googleapi.css">-->
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <Link type="text/css" rel="stylesheet" href="css/customMaterialize.css">
+
 </head>
 <body>
 
@@ -21,10 +28,12 @@
             <!--<a id="navbar-brand" class="navbar-brand" href="MainPage.html">The Film Cart</a>-->
         </div>
 
-        <div id="searchbox" class="search">
+
+        <div id="searchbox"  class="z-depth-4">
+            <!--class="search"-->
             <!--<input class="todo-search-field" type="search" value="Search" placeholder="Search"/>-->
 
-            <div class="container">
+            <!--<div class="container">
 
                 <form action="javascript:void(0);" method="get">
 
@@ -42,10 +51,22 @@
 
                 </form>
 
-            </div> <!-- end container -->
-
+            </div> &lt;!&ndash; end container &ndash;&gt;-->
+            <nav>
+                <div class="nav-wrapper">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
 
         </div>
+
+
 
         <div id="login" class="Login">
             <a class="login" href="#">Login/Profile</a>
@@ -58,7 +79,7 @@
         <ul id="list" class="nav navbar-nav navbar-right">
             <li class="active"><a href="#" data-nav-section="DVDs"><span>DVDs</span></a></li>
             <li><a href="#" data-nav-section="Cosplay"><span>Cosplay</span></a></li>
-            <li><a href="#" data-nav-section="Dress"><span>Dress</span></a></li>
+
             <li><a href="#" data-nav-section="Souvenir"><span>Souvenir</span></a></li>
 
         </ul>
@@ -154,16 +175,16 @@
                 <div id="page" class="pagify">
 
                     <ul id="pagification" class="pagination">
-                        <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
-                        <li class="active"><a href="#fakelink">1</a></li>
-                        <li><a href="#fakelink">2</a></li>
-                        <li><a href="#fakelink">3</a></li>
-                        <li><a href="#fakelink">4</a></li>
-                        <li><a href="#fakelink">5</a></li>
-                        <li><a href="#fakelink">6</a></li>
-                        <li><a href="#fakelink">7</a></li>
-                        <li><a href="#fakelink">8</a></li>
-                        <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+                        <li class="previous"><a href="#" class="fui-arrow-left"></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li class="next"><a href="#" class="fui-arrow-right"></a></li>
                     </ul>
 
                 </div>
@@ -185,10 +206,13 @@
 </body>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/search.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--<script src="js/search.js"></script>-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 <!--<script src="dist/js/vendor/video.js"></script>-->
 <!--<script src="dist/js/flat-ui.min.js"></script>-->
 <script src="js/application.js"></script>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 
 </html>
