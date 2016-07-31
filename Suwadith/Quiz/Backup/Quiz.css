@@ -13,12 +13,12 @@ body{
     max-width: 800px;
     line-height: 1.5em;
     background-color: white;
-    /* background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, yellow), color-stop(1, green));
-     !* Android 2.3 *!
-     background-image: -webkit-repeating-linear-gradient(top left, yellow 0%, green 100%);
-     !* IE10+ *!
-     background-image: repeating-linear-gradient(to bottom right, yellow 0%, green 100%);
-     background-image: -ms-repeating-linear-gradient(top left, yellow 0%, green 100%);*/
+   /* background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, yellow), color-stop(1, green));
+    !* Android 2.3 *!
+    background-image: -webkit-repeating-linear-gradient(top left, yellow 0%, green 100%);
+    !* IE10+ *!
+    background-image: repeating-linear-gradient(to bottom right, yellow 0%, green 100%);
+    background-image: -ms-repeating-linear-gradient(top left, yellow 0%, green 100%);*/
 }
 
 .buttonStyle{

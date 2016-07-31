@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css">
+    <script src="Quiz.js"></script>
+
+</head>
+
+<body>
+
+<Header></Header>
+
+<section>
+
+
+    <div id="startMenu" class="startMenuClass">
+        <h1>Quiz</h1>
+        <h2>Rules</h2>
+        <ul>
+            <li><p>10 Simple Questions regarding the Film industry will be given to you.</p></li>
+            <li><p>All you'll have to do is to choose the correct answer from the 4 options that we give</p></li>
+            <li><p>For Each correct answer you'll receive 2 points</p></li>
+            <li><p>For Each wrong answer your mark will be deducted by 1</p></li>
+            <li><p>You have to complete this game within 120 seconds</p></li>
+            <li><p>Good Luck!</p></li>
+        </ul>
+        <div class="centerAlign">
+            </br><input type="button" id="startButton" onclick="start()" value="start" class="buttonStyle">
+        </div>
+    </div>
+
+    <h3 id="timer" class="hide"></h3>
+
+
+    <div id="questionMenu" class="centerAlign">
+        <h3 id="questions"></h3>
+        <div id="radioButtons" class="hide">
+            <table align="center">
+                <tr>
+                    <td><input type="radio" name="questions" value="1"><h4 id="question1"></h4></br></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="questions" value="2"><h4 id="question2"></h4></br></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="questions" value="3"><h4 id="question3"></h4></br></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="questions" value="4"><h4 id="question4"></h4></br></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div id="resultsMenu" class="hide">
+        <h2 id="results"></h2>
+
+        <h3 id="ques_0"></h3><h4 id="answ_0"></h4></br><h4 id="giv_0"></h4>
+        <h3 id="ques_1"></h3><h4 id="answ_1"></h4></br><h4 id="giv_1"></h4>
+        <h3 id="ques_2"></h3><h4 id="answ_2"></h4></br><h4 id="giv_2"></h4>
+        <h3 id="ques_3"></h3><h4 id="answ_3"></h4></br><h4 id="giv_3"></h4>
+        <h3 id="ques_4"></h3><h4 id="answ_4"></h4></br><h4 id="giv_4"></h4>
+        <h3 id="ques_5"></h3><h4 id="answ_5"></h4></br><h4 id="giv_5"></h4>
+        <h3 id="ques_6"></h3><h4 id="answ_6"></h4></br><h4 id="giv_6"></h4>
+        <h3 id="ques_7"></h3><h4 id="answ_7"></h4></br><h4 id="giv_7"></h4>
+        <h3 id="ques_8"></h3><h4 id="answ_8"></h4></br><h4 id="giv_8"></h4>
+        <h3 id="ques_9"></h3><h4 id="answ_9"></h4></br><h4 id="giv_9"></h4>
+    </div>
+
+
+</section>
+
+<footer></footer>
+
+</body>
+</html>
+
