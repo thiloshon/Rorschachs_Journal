@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>poll</title>
+
+<script>
+    function getVote(int) {
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("poll").innerHTML = xmlhttp.responseText;
+                }
+            };
+            xmlhttp.open("GET", "poll_vote.php?vote=" + int, true);
+            xmlhttp.send();
+        }
+    }
+</script>
+</head>
+
+<body>
+
+<div id="poll">
+    <h3>Does Suwadith like grannies?</h3>
+    <form>
+        Yes:
+        <label>
+            <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+        </label>
+        <br>
+        No:
+        <label>
+            <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+        </label>
+    </form>
+</div>
+
+</body>
+
+
+</html>
