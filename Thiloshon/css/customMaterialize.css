@@ -1,0 +1,13 @@
+
+
+.input-field {
+
+
+    background: #16a085;
+
+
+}
+
+.input-field input[type=search]:focus {
+    background-color: #34495e;
+}
