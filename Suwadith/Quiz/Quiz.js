@@ -231,25 +231,6 @@ function checkAnswers() {
         }
     }
 
-    radios = document.getElementsByName("q5");
-    document.getElementById("displayQuestion5").innerHTML = document.getElementById("question5").innerHTML;
-    for (var i = 0; i < radios.length; i++) {
-        if (radios[i].checked) {
-            (radios[i].value);
-            if (radios[i].value == CorrectAnswers[4]) {
-                document.getElementById("displayAnswer5").innerHTML = "you've chosen the correct answer. It's The Curious Case of Benjamin Button";
-                marks += 2;
-            } else {
-                document.getElementById("displayAnswer5").innerHTML = "Incorrect answer. Correct Answer is The Curious Case of Benjamin Button";
-                marks -= 1;
-            }
-            break;
-        } else {
-            document.getElementById("displayAnswer5").innerHTML = "You didn't choose an answer. Correct Answer is The Curious Case of Benjamin Button";
-            marks += 0;
-        }
-    }
-
     if (marks >= 15) {
         document.body.style.backgroundColor = "lawngreen";
     } else if (marks >= 10) {
