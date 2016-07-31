@@ -13,12 +13,6 @@ body{
     max-width: 800px;
     line-height: 1.5em;
     background-color: white;
-    /* background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, yellow), color-stop(1, green));
-     !* Android 2.3 *!
-     background-image: -webkit-repeating-linear-gradient(top left, yellow 0%, green 100%);
-     !* IE10+ *!
-     background-image: repeating-linear-gradient(to bottom right, yellow 0%, green 100%);
-     background-image: -ms-repeating-linear-gradient(top left, yellow 0%, green 100%);*/
 }
 
 .buttonStyle{
@@ -28,7 +22,6 @@ body{
     padding: 12px 50px;
     text-align: center;
     text-decoration: none;
-    /*font-family: 'Gotham';*/
     display: inline-block;
     font-size: 25px;
     margin: 4px 2px;
@@ -46,72 +39,6 @@ h1{
 }
 
 
-
-/*@font-face {
-    font-family: 'Gotham';
-    src: url('fonts/Gotham Bold.otf');
-}
-@font-face {
-    font-family: 'Gotham-Light';
-    src: url('fonts/Gotham XLight.otf');
-}*/
-/*body{
-    background-color: black;
-}*/
-/*.btnDesign{
-    background-color: #f2eb14;
-    color: white;
-    border: 2px solid #ffff00;
-    padding: 12px 50px;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Gotham';
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-.btnDesign:hover{
-    background-color: #b2b200;
-    border: 2px solid #b2b200;
-    color: white;
-}
-.centerDiv {
-    margin: auto;
-    text-align: center;
-}*/
-/*.M_Title{
-    text-align: center;
-    padding-top: 12%;
-}
-h1 {
-    color: #ffff00;
-    font-family: Gotham;
-    font-size: 150px;
-    display:inline;
-}
-h2 {
-    color: #ffff00;
-    font-family: Gotham-Light;
-    font-size: 150px;
-    display:inline;
-}
-h3 {
-    color: #ffff00;
-    font-family: Gotham-Light;
-    font-size: 40px;
-}
-h4 {
-    color: #ffff00;
-    font-family: Gotham-Light;
-    display:inline;
-    font-size: 30px;
-}
-li{
-    padding-left: 6%;
-    padding-top: 2%;
-}*/
 .hide {
     display: none;
     margin: auto;
