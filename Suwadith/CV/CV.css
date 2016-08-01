@@ -10,53 +10,36 @@ html{
 body{
     margin: 0 auto;
     padding: 2em 2em 40em;
-    max-width: 800px;
+    max-width: 1000px;
     line-height: 1.5em;
     background-color: white;
 }
 
-.buttonStyle{
-    background-color: orange;
-    color: black;
-    border: 2px solid #ffff00;
-    padding: 12px 50px;
+@font-face {
+    font-family: EthRomainEthon;
+    src: url(EthRomainEthon.ttf);
+}
+
+h1 {
+    font-size: 120px;
+    font-family: EthRomainEthon;
+}
+
+.ourTeamClass{
     text-align: center;
-    text-decoration: none;
+}
+
+.ourTeamClass p{
+    font-family: EthRomainEthon;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.members{
     display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    padding-right: 20px;
 }
 
-h1{
-    text-align: center;
-}
-
-.centerAlign{
-    text-align: center;
-
-}
-
-
-.hide {
-    display: none;
-    margin: auto;
-    text-align: left;
-}
-.show {
-    display: block;
-    margin: auto;
-    text-align: left;
-}
-
-
-.rightAlign{
-    text-align: right;
-
-}
-
-.leftAlign{
-    text-align: right;
-
+img {
+    border-radius: 50%;
 }
