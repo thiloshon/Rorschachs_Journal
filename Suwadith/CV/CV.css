@@ -9,7 +9,7 @@ html{
 
 body{
     margin: 0 auto;
-    padding: 2em 2em 40em;
+    padding: 2em 2em 10em;
     max-width: 1000px;
     line-height: 1.5em;
     background-color: white;
@@ -23,13 +23,14 @@ body{
 h1 {
     font-size: 120px;
     font-family: EthRomainEthon;
+    padding-bottom: 110px;
 }
 
 .ourTeamClass{
     text-align: center;
 }
 
-.ourTeamClass p{
+.members p{
     font-family: EthRomainEthon;
     font-style: italic;
     font-weight: bold;
@@ -42,4 +43,24 @@ h1 {
 
 img {
     border-radius: 50%;
+}
+
+button {
+    display: inline-block;
+    border:0 none;
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+.display{
+    display: block;
+    margin: auto;
+    text-align: left;
+}
+
+.hidden{
+    display: none;
+    margin: auto;
+    text-align: left;
 }
