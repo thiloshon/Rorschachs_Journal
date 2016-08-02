@@ -108,3 +108,23 @@ button {
     line-height: 70%;
     font-weight: bold;
 }
+
+#yohan h2{
+    padding-left: 1em;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+#yohan h3{
+    padding-left: 3em;
+    font-family: Calibri;
+    font-weight: bold;
+
+}
+
+#yohan p{
+    padding-left:7em;
+    font-family: Calibri;
+    line-height: 70%;
+    font-weight: bold;
+}
