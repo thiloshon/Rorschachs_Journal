@@ -270,6 +270,7 @@ Main components
   animation: cd-fade-in 0.5s;
 }
 .cd-tabs-content li p {
+  float: inherit;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.6;
