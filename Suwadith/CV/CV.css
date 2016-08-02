@@ -10,9 +10,13 @@ html{
 body{
     margin: 0 auto;
     padding: 2em 2em 10em;
-    max-width: 1000px;
+    max-width: 900px;
     line-height: 1.5em;
     background-color: white;
+    border-style: solid;
+    border-left: solid deepskyblue;
+    border-bottom: solid deepskyblue;
+    border-width: 15px;
 }
 
 @font-face {
@@ -63,4 +67,44 @@ button {
     display: none;
     margin: auto;
     text-align: left;
+}
+
+#thiloshon h2{
+    padding-left: 1em;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+#thiloshon h3{
+    padding-left: 3em;
+    font-family: Calibri;
+    font-weight: bold;
+
+}
+
+#thiloshon p{
+    padding-left:7em;
+    font-family: Calibri;
+    line-height: 70%;
+    font-weight: bold;
+}
+
+#suwadith h2{
+    padding-left: 1em;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+#suwadith h3{
+    padding-left: 3em;
+    font-family: Calibri;
+    font-weight: bold;
+
+}
+
+#suwadith p{
+    padding-left:7em;
+    font-family: Calibri;
+    line-height: 70%;
+    font-weight: bold;
 }
