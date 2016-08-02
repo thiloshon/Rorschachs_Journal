@@ -9,16 +9,26 @@ html{
 
 body{
     margin: 0 auto;
-    padding: 2em 2em 40em;
+    padding: 2em 2em 10em;
     max-width: 800px;
     line-height: 1.5em;
-    background-color: white;
+    background-color: mediumspringgreen;
+    border-style: solid;
+    border-left: solid deepskyblue;
+    border-bottom: solid deepskyblue;
+    border-width: 15px;
 }
 
 .buttonStyle{
+    font-family: EthRomainEthon;
+    font-weight: bold;
     background-color: orange;
     color: black;
-    border: 2px solid #ffff00;
+    border-top: solid black;
+    border-right: solid black;
+    border-left: solid deepskyblue;
+    border-bottom: solid deepskyblue;
+    border-width: 8px;
     padding: 12px 50px;
     text-align: center;
     text-decoration: none;
@@ -29,15 +39,45 @@ body{
     cursor: pointer;
 }
 
-h1{
+@font-face {
+    font-family: EthRomainEthon;
+    src: url(EthRomainEthon.ttf);
+}
+
+.startMenuClass h1{
+    font-size: 120px;
+    font-family: EthRomainEthon;
+    font-weight: bold;
+    padding-bottom: 70px;
     text-align: center;
 }
+
+.startMenuClass h2{
+    font-size: 100px;
+    font-family: EthRomainEthon;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.startMenuClass li{
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+.startMenuClass ul{
+    padding-bottom: 60px;
+}
+
+
+#timer{
+    font-family: Calibri;
+}
+
 
 .centerAlign{
     text-align: center;
 
 }
-
 
 .hide {
     display: none;
@@ -59,4 +99,46 @@ h1{
 .leftAlign{
     text-align: right;
 
+}
+
+.centerAlign #timer{
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.question {
+    padding-top: 40px;
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+.answers{
+    font-family: "Calibri";
+    font-weight: bold;
+}
+
+#results{
+    font-size: 100px;
+    font-family: EthRomainEthon;
+    text-align: center;
+    font-weight: bold;
+}
+
+#displayMarks{
+    font-family: "Calibri";
+    font-size: 60px;
+    text-align: center;
+}
+
+.displayQuestions{
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.displayAnswers{
+    font-family: "Courier New";
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 18px;
 }

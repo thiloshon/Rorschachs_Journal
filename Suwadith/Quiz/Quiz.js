@@ -238,13 +238,13 @@ function checkAnswers() {
     } else if (marks >= 5) {
         document.body.style.backgroundColor = "yellow";
     } else if(marks >= 0){
-        document.body.style.backgroundColor = "indianred";
+        document.body.style.backgroundColor = "red";
     }else{
         marks=0;
     }
 
     var m = marks.toString();
-    document.getElementById("displayMarks").innerHTML = "You Have Scored: " + m;
+    document.getElementById("displayMarks").innerHTML = "Your Score is: " + m;
 
 }
 
