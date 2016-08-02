@@ -6,10 +6,12 @@
     background: #16a085;
 
 
+
 }
 
 .input-field input[type=search]:focus {
     background-color: #34495e;
+
 }
 
 
@@ -21,4 +23,13 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 #search {
     font-size: 14px;
+}
+
+#modal1 {
+    /*margin-top: 10%;*/
+
+}
+.modal.modal-fixed-footer {
+
+    /*height: 300px;*/
 }

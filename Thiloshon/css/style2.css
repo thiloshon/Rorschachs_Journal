@@ -257,7 +257,7 @@ Main components
 }
 
 .cd-tabs-content {
-  background: #e4eaff;
+  /*background: #e4eaff;*/
 }
 .cd-tabs-content li {
   display: none;

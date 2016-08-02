@@ -24,6 +24,7 @@
     <Link type="text/css" rel="stylesheet" href="css/customMaterialize.css">
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="css/style2.css"> <!-- Resource style -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/tabs/modernizr.js"></script> <!-- Modernizr -->
 
 </head>
@@ -197,11 +198,12 @@ END
                                     <div>
                                         <div id="text">
                                             </br>
-                                            <p>Batman vs Superman</br>  Price: 99$</p>
+                                            <p>Batman vs Superman</br>  Price:  $99</p>
 
                                         </div>
-                                        
-                                        <div id="addCart"><p>Add to Cart</p></br><i id="addCartIcon" class="material-icons">shopping_cart</i></div>
+
+                                        <!--<a href="https://github.com/thiloshon/Rorschachs_Journal.git" >TEAM RORSCHACH</a>-->
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
 
                                     </div>
 
@@ -225,12 +227,12 @@ END
 
                                 <div id="can">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/inglorious.jpg" alt="Movie Hub" class="z-depth-5" style="width:270px;height:400px;">
+                                        <img src="images/TheDarkKnightRises_TeaserPoster.jpg" alt="Movie Hub" class="z-depth-5" style="width:270px;height:400px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
-                                            <p>Inglorious Bastards</br>  Price: 99$</p>
+                                            <p>The Dark Knight Rises Extended Cut</br>  Price: 99$</p>
                                         </div>
                                         <div id="addCart"><p>Add to Cart</p></div>
                                     </div>
@@ -274,12 +276,12 @@ END
 
                                 <div id="can">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/TheDarkKnightRises_TeaserPoster.jpg" alt="Movie Hub" class="z-depth-5" style="width:270px;height:400px;">
+                                        <img src="images/inglorious.jpg" alt="Movie Hub" class="z-depth-5" style="width:270px;height:400px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
-                                            <p>The Dark Knight Rises Extended Cut</br>  Price: 99$</p>
+                                            <p>Inglorious Bastards</br>  Price: 99$</p>
                                         </div>
                                         <div id="addCart"><p>Add to Cart</p></div>
                                     </div>
@@ -384,9 +386,11 @@ END
                         </ul> <!-- cd-tabs-content -->
                     </div> <!-- cd-tabs -->
 
+
+
                 </section>
             </div>
-            <div id="paging">
+            <!--<div id="paging">
                 <div id="page" class="pagify">
 
                     <ul id="pagification" class="pagination">
@@ -403,7 +407,7 @@ END
                     </ul>
 
                 </div>
-            </div>
+            </div>-->
 
 
         </div>
@@ -413,7 +417,31 @@ END
 </section>
 
 
+
+<div class="row center">
+    <button data-target="modal1" class="btn modal-trigger">Modal</button>
+</div>
+<!-- Modal Structure -->
+<div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+</div>
+<br><br>
+
 </body>
+
+
+<script>
+    $(document).ready(function() {
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+    });
+</script>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/application.js"></script>
