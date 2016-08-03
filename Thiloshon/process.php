@@ -32,9 +32,64 @@
 
 session_start();
 
-if (isset($_SESSION["username"])){
 
-    /*if ()*/
+
+
+if (isset($_SESSION["goodCredentials"])){
+
+    $_SESSION["currentProduct"] = $_GET["product"];
+    $_SESSION["currentNumber"] = $_GET["number"];
+
+    $_pass = $_SESSION["password"];
+    $_name = $_SESSION["username"];
+
+    
+    include "config.php";
+    $_query = "select * from users";
+    $_result = mysqli_query($con, $_query);
+
+    while($row = mysqli_fetch_array($_result)) {
+        if ($row['username'] == $_SESSION["username"]) {
+            echo "Good Credentials";
+
+            
+            $_prodID = $_GET["product"];
+            $_amount = $_GET["number"];
+            echo $_SESSION["currentProduct"];
+            echo $_SESSION["currentNumber"];
+
+
+            $query2 = "INSERT INTO sales (username, productID, Amount) VALUES ('$_name','$_prodID','$_amount')";
+            $_result2 = mysqli_query($con, $query2);
+            header('Location: cart.php');
+        }
+
+    }
+
+
+
+    /*$value = mysqli_fetch_object($_result);
+    if ($_name == $value->password){
+        echo "Good Credentials";
+
+        $_SESSION["currentProduct"] = $_GET["product"];
+        $_SESSION["currentNumber"] = $_GET["number"];
+        $_prodID = $_GET["product"];
+        $_amount = $_GET["number"];
+        echo $_SESSION["currentProduct"];
+        echo $_SESSION["currentNumber"];
+
+
+        $query2 = "INSERT INTO sales (username, productID, Amount) VALUES ('$name','$_prodID','$_amount')";
+        /*header('Location: cart.php');
+
+    }*/
+
+
+
+
+
+
 
 }else{
     echo " <div id=\"modal1\" class=\"modal modal-fixed-footer\">
@@ -72,9 +127,7 @@ if (isset($_SESSION["username"])){
 </div> ";
 }
 
-include "config.php";
-$item = $_GET["product"];
-echo $item;
+
 
 ?>
 

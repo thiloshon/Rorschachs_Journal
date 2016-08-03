@@ -18,10 +18,10 @@
     Choose Product:
 
     <select name="product" id="product">
-        <option value="Batman vs Superman">Batman vs Superman</option>
-        <option value="Inception">Inception</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="1000001">Batman vs Superman</option>
+        <option value="1000002">Inception</option>
+        <option value="1000003">Mercedes</option>
+        <option value="1000004">Audi</option>
     </select>
 
     Choose Number:
