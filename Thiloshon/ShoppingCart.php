@@ -32,6 +32,7 @@
 
 
 <header role="banner" id="fh5co-header">
+
     <div class="containerOuter" id="containerOuter">
         <!-- <div class="row"> -->
 
@@ -77,11 +78,11 @@
 <section id="body">
 
 
-    <div class="gradient"></div>
-    <div class="slant"></div>
+    <!--<div class="gradient"></div>
+    <div class="slant"></div>-->
 
-    <div class="gradient"></div>
-    <div class="slant"></div>
+    <!--<div class="gradient"></div>
+    <div class="slant"></div>-->
 
     <div>
 
@@ -192,18 +193,31 @@ END
 
                                 <div id="can">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/batman-vs-superman-poster-alfred.jpg" alt="Movie Hub" class="z-depth-5" style="width:270px;height:400px;">
+                                        <img src="images/batman-vs-superman-poster-alfred.jpg" alt="Movie Hub"
+                                             class="z-depth-5" style="width:270px;height:400px;">
 
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
-                                            <p>Batman vs Superman</br>  Price:  $99</p>
+                                            <p>Batman vs Superman Ultimate Edition</br>  Price: $99</p>
 
                                         </div>
 
                                         <!--<a href="https://github.com/thiloshon/Rorschachs_Journal.git" >TEAM RORSCHACH</a>-->
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="1"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
 
                                     </div>
 
@@ -212,14 +226,28 @@ END
 
                                 <div id="can">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/inception.jpg" alt="Movie Hub" class="z-depth-5" style="width:270px;height:400px;">
+                                        <img src="images/inception.jpg" alt="Movie Hub" class="z-depth-5"
+                                             style="width:270px;height:400px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
                                             <p>Inception</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="2"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
@@ -227,14 +255,28 @@ END
 
                                 <div id="can">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/TheDarkKnightRises_TeaserPoster.jpg" alt="Movie Hub" class="z-depth-5" style="width:270px;height:400px;">
+                                        <img src="images/TheDarkKnightRises_TeaserPoster.jpg" alt="Movie Hub"
+                                             class="z-depth-5" style="width:270px;height:400px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
                                             <p>The Dark Knight Rises Extended Cut</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="3"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
@@ -250,17 +292,30 @@ END
                                             </br>
                                             <p>Drive</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="4"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
                                 </div>
 
 
-
                                 <div id="can">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/enemy%2001.jpg" alt="Movie Hub" class="z-depth-5" style="width:270px;height:400px;">
+                                        <img src="images/enemy%2001.jpg" alt="Movie Hub" class="z-depth-5"
+                                             style="width:270px;height:400px;">
 
                                     </div>
                                     <div>
@@ -268,7 +323,20 @@ END
                                             </br>
                                             <p>Enemy</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="5"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
@@ -276,14 +344,28 @@ END
 
                                 <div id="can">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/inglorious.jpg" alt="Movie Hub" class="z-depth-5" style="width:270px;height:400px;">
+                                        <img src="images/inglorious.jpg" alt="Movie Hub" class="z-depth-5"
+                                             style="width:270px;height:400px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
                                             <p>Inglorious Bastards</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="6"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
@@ -296,14 +378,28 @@ END
 
                                 <div id="can2">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/assasins.jpg" alt="Movie Hub" class="z-depth-5" style="height:400px;">
+                                        <img src="images/assasins.jpg" alt="Movie Hub" class="z-depth-5"
+                                             style="height:400px;">
                                     </div>
                                     <div>
                                         <div id="text2">
                                             </br>
                                             <p>Assasin's Creed Costume</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="7"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
@@ -311,14 +407,28 @@ END
 
                                 <div id="can2">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/darth.jpg" alt="Movie Hub" class="z-depth-5" style="height:400px;">
+                                        <img src="images/darth.jpg" alt="Movie Hub" class="z-depth-5"
+                                             style="height:400px;">
                                     </div>
                                     <div>
                                         <div id="text2">
                                             </br>
                                             <p>Darth Vader Mask</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="8"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
@@ -326,14 +436,28 @@ END
 
                                 <div id="can2">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/skyrim.jpg" alt="Movie Hub" class="z-depth-5" style="height:400px;">
+                                        <img src="images/skyrim.jpg" alt="Movie Hub" class="z-depth-5"
+                                             style="height:400px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
                                             <p>Skyrim Sword</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="9"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
@@ -342,20 +466,32 @@ END
 
                                 <div id="can2">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/wolverine.jpg" alt="Movie Hub" class="z-depth-5" style="height:400px;">
+                                        <img src="images/wolverine.jpg" alt="Movie Hub" class="z-depth-5"
+                                             style="height:400px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
                                             <p>Wolverine Blade</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="10"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
                                 </div>
-
-
 
 
                             </li>
@@ -366,14 +502,28 @@ END
 
                                 <div id="can2">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/500.png" alt="Movie Hub" class="z-depth-5" style="height:300px;">
+                                        <img src="images/500.png" alt="Movie Hub" class="z-depth-5"
+                                             style="height:300px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
                                             <p>500$ Gift Voucher</br>  Price: 500$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="11"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
@@ -381,14 +531,28 @@ END
 
                                 <div id="can2">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/1000rs.png" alt="Movie Hub" class="z-depth-5" style="height:300px;">
+                                        <img src="images/1000rs.png" alt="Movie Hub" class="z-depth-5"
+                                             style="height:300px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
                                             <p>1000$ Gift Voucher</br>  Price: 1000$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="12"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
@@ -396,19 +560,32 @@ END
 
                                 <div id="can2">
                                     <div class="ddd" id="ddd">
-                                        <img src="images/1500.png" alt="Movie Hub" class="z-depth-5" style="height:300px;">
+                                        <img src="images/1500.png" alt="Movie Hub" class="z-depth-5"
+                                             style="height:300px;">
                                     </div>
                                     <div>
                                         <div id="text">
                                             </br>
                                             <p>1500$ Gift Voucher</br>  Price: 1500$</p>
                                         </div>
-                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                        <div id="addCart"><p><a href="addToCart.php">Add to Cart</a></p></br>
+
+                                            <form id="logout" method="get" action="product.php">
+
+                                                <select name="prod" class="hide">
+                                                    <option value="13"></option>
+                                                </select>
+
+                                                <input type="submit" class="view" value="View Product">
+
+                                            </form>
+
+                                            <!--<i id="addCartIcon"  class="material-icons">shopping_cart</i>--></div>
+
                                     </div>
 
 
                                 </div>
-
 
 
                             </li>
@@ -423,7 +600,6 @@ END
                             </li>
                         </ul> <!-- cd-tabs-content -->
                     </div> <!-- cd-tabs -->
-
 
 
                 </section>
@@ -455,31 +631,7 @@ END
 </section>
 
 
-
-<div class="row center">
-    <button data-target="modal1" class="btn modal-trigger">Modal</button>
-</div>
-<!-- Modal Structure -->
-<div id="modal1" class="modal modal-fixed-footer">
-    <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
-    </div>
-</div>
-<br><br>
-
 </body>
-
-
-<script>
-    $(document).ready(function() {
-        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-        $('.modal-trigger').leanModal();
-    });
-</script>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/application.js"></script>
@@ -490,7 +642,6 @@ END
 <script src="js/tabs/main.js"></script>
 
 </html>
-
 
 
 <?php
@@ -522,9 +673,7 @@ while ($row = mysqli_fetch_array($results)) {
 }
 
 
-*/?>
-
-
+*/ ?>
 
 
 <!--
@@ -559,4 +708,4 @@ while ($row = mysqli_fetch_array($results)) {
 }
 
 
-*/?>
+*/ ?>

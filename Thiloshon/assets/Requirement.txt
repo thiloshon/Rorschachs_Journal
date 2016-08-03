@@ -1,0 +1,42 @@
+
+Done:
+A shopping cart to sell products related to your sites� theme/ idea.
+
+ There should be several categories of products and
+    each category should have a page of its own. Ex. If you have chosen �Cricket� as the theme then you can have one page
+    to sell sport items such as cricket bats and balls, another page to sell souvenirs such as shirts, key tags and another
+    page to sell nutrition foods and drinks.
+    There should at least be 3 different categories and each category should have
+        at least 4 products to sell with a detail/ description for each product with the remaining stock quantity.
+
+        For the products pages you need to consider the followings:
+        ? Available balance for each item should be taken from the database
+
+        ? Product details/ descriptions should be taken from the database as well.
+
+
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+
+
+ and after the order is placed the number of items should be modified accordingly.
+
+The shopping cart needs to collect the following:
+3
+? Personal details
+? Contact information (mobile no, email etc�)
+
+When a user has finished choosing the items then
+? An automatic bill for the products ordered should be prepared.
+? Before proceeding it should force the user to fill-in some compulsory fields.
+? When the 'place order' button is clicked, the user should get a message with the summary of the order.
+? Every order needs to be saved on a database and for every order a unique ID should be generated for user to track the
+    progress of the order at a later time.
+? The background color of the page should change according to the total price of the bill and the unique ID should be
+    displayed on this page.
+A page should be there for the users to track the progress of the orders by entering the unique ID for the order and
+    view the progress of the order with the details of the order.
