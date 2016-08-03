@@ -128,3 +128,23 @@ button {
     line-height: 70%;
     font-weight: bold;
 }
+
+#malik h2{
+    padding-left: 1em;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+#malik h3{
+    padding-left: 3em;
+    font-family: Calibri;
+    font-weight: bold;
+
+}
+
+#malik p{
+    padding-left:7em;
+    font-family: Calibri;
+    line-height: 70%;
+    font-weight: bold;
+}
