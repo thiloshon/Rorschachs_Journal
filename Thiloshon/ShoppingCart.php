@@ -219,7 +219,7 @@ END
                                             </br>
                                             <p>Inception</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p>Add to Cart</p></div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
                                     </div>
 
 
@@ -234,7 +234,7 @@ END
                                             </br>
                                             <p>The Dark Knight Rises Extended Cut</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p>Add to Cart</p></div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
                                     </div>
 
 
@@ -250,7 +250,7 @@ END
                                             </br>
                                             <p>Drive</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p>Add to Cart</p></div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
                                     </div>
 
 
@@ -268,7 +268,7 @@ END
                                             </br>
                                             <p>Enemy</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p>Add to Cart</p></div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
                                     </div>
 
 
@@ -283,7 +283,7 @@ END
                                             </br>
                                             <p>Inglorious Bastards</br>  Price: 99$</p>
                                         </div>
-                                        <div id="addCart"><p>Add to Cart</p></div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
                                     </div>
 
 
@@ -294,73 +294,68 @@ END
 
                             <li data-content="new">
 
-                                    <?php
-                                    include "config.php";
-                                    $query = "select * from DVDs";
-                                    $results = mysqli_query($con, $query);
-
-
-                                    while ($row = mysqli_fetch_array($results)) {
-
-
-                                        echo "<div id=\"can\">
-                                    <div class=\"ddd\" id=\"ddd\">
-                                        <img src=\"images/batman-vs-superman-poster-alfred.jpg\" alt=\"Movie Hub\" class=\"z-depth-4\" >
+                                <div id="can2">
+                                    <div class="ddd" id="ddd">
+                                        <img src="images/assasins.jpg" alt="Movie Hub" class="z-depth-5" style="height:400px;">
                                     </div>
                                     <div>
-                                        <div id=\"text\">
+                                        <div id="text2">
                                             </br>
-                                            <p >Batman vs Superman</p>
+                                            <p>Assasin's Creed Costume</br>  Price: 99$</p>
                                         </div>
-                                        <div id=\"addCart\"><p>Add to Cart</p></div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
                                     </div>
-                                    
-                                    
-                                    
-                                </div> ";
-
-                                        /*echo "<p> $row[Name]</p>";*/
 
 
-                                    }
+                                </div>
 
-
-                                    ?>
-
-
-
-                                <?php
-                                include "config.php";
-                                $query = "select * from DVDs";
-                                $results = mysqli_query($con, $query);
-
-
-                                while ($row = mysqli_fetch_array($results)) {
-
-
-                                    echo "<div id=\"can\">
-                                    <div class=\"ddd\" id=\"ddd\">
-                                        <img src=\"images/batman-vs-superman-poster-alfred.jpg\" alt=\"Movie Hub\" class=\"z-depth-4\" >
+                                <div id="can2">
+                                    <div class="ddd" id="ddd">
+                                        <img src="images/darth.jpg" alt="Movie Hub" class="z-depth-5" style="height:400px;">
                                     </div>
                                     <div>
-                                        <div id=\"text\">
+                                        <div id="text2">
                                             </br>
-                                            <p >Batman vs Superman</p>
+                                            <p>Darth Vader Mask</br>  Price: 99$</p>
                                         </div>
-                                        <div id=\"addCart\"><p>Add to Cart</p></div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
                                     </div>
-                                    
-                                    
-                                    
-                                </div> ";
-
-                                    /*echo "<p> $row[Name]</p>";*/
 
 
-                                }
+                                </div>
+
+                                <div id="can2">
+                                    <div class="ddd" id="ddd">
+                                        <img src="images/skyrim.jpg" alt="Movie Hub" class="z-depth-5" style="height:400px;">
+                                    </div>
+                                    <div>
+                                        <div id="text">
+                                            </br>
+                                            <p>Skyrim Sword</br>  Price: 99$</p>
+                                        </div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                    </div>
 
 
-                                ?>
+                                </div>
+
+
+                                <div id="can2">
+                                    <div class="ddd" id="ddd">
+                                        <img src="images/wolverine.jpg" alt="Movie Hub" class="z-depth-5" style="height:400px;">
+                                    </div>
+                                    <div>
+                                        <div id="text">
+                                            </br>
+                                            <p>Wolverine Blade</br>  Price: 99$</p>
+                                        </div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                    </div>
+
+
+                                </div>
+
+
 
 
                             </li>
@@ -369,7 +364,50 @@ END
                             <li data-content="gallery">
 
 
+                                <div id="can2">
+                                    <div class="ddd" id="ddd">
+                                        <img src="images/500.png" alt="Movie Hub" class="z-depth-5" style="height:300px;">
+                                    </div>
+                                    <div>
+                                        <div id="text">
+                                            </br>
+                                            <p>500$ Gift Voucher</br>  Price: 500$</p>
+                                        </div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                    </div>
 
+
+                                </div>
+
+                                <div id="can2">
+                                    <div class="ddd" id="ddd">
+                                        <img src="images/1000rs.png" alt="Movie Hub" class="z-depth-5" style="height:300px;">
+                                    </div>
+                                    <div>
+                                        <div id="text">
+                                            </br>
+                                            <p>1000$ Gift Voucher</br>  Price: 1000$</p>
+                                        </div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                    </div>
+
+
+                                </div>
+
+                                <div id="can2">
+                                    <div class="ddd" id="ddd">
+                                        <img src="images/1500.png" alt="Movie Hub" class="z-depth-5" style="height:300px;">
+                                    </div>
+                                    <div>
+                                        <div id="text">
+                                            </br>
+                                            <p>1500$ Gift Voucher</br>  Price: 1500$</p>
+                                        </div>
+                                        <div id="addCart"><p><a href="addToCart.php" >Add to Cart</a></p></br><i id="addCartIcon"  class="material-icons">shopping_cart</i></div>
+                                    </div>
+
+
+                                </div>
 
 
 
@@ -452,3 +490,73 @@ END
 <script src="js/tabs/main.js"></script>
 
 </html>
+
+
+
+<?php
+/*include "config.php";
+$query = "select * from DVDs";
+$results = mysqli_query($con, $query);
+
+
+while ($row = mysqli_fetch_array($results)) {
+
+
+    echo "<div id=\"can\">
+                                    <div class=\"ddd\" id=\"ddd\">
+                                        <img src=\"images/batman-vs-superman-poster-alfred.jpg\" alt=\"Movie Hub\" class=\"z-depth-4\" >
+                                    </div>
+                                    <div>
+                                        <div id=\"text\">
+                                            </br>
+                                            <p >Batman vs Superman</p>
+                                        </div>
+                                        <div id=\"addCart\"><p>Add to Cart</p></div>
+                                    </div>
+
+
+
+                                </div> ";
+
+
+}
+
+
+*/?>
+
+
+
+
+<!--
+--><?php
+/*include "config.php";
+$query = "select * from DVDs";
+$results = mysqli_query($con, $query);
+
+
+while ($row = mysqli_fetch_array($results)) {
+
+
+    echo "<div id=\"can\">
+                                    <div class=\"ddd\" id=\"ddd\">
+                                        <img src=\"images/batman-vs-superman-poster-alfred.jpg\" alt=\"Movie Hub\" class=\"z-depth-4\" >
+                                    </div>
+                                    <div>
+                                        <div id=\"text\">
+                                            </br>
+                                            <p >Batman vs Superman</p>
+                                        </div>
+                                        <div id=\"addCart\"><p>Add to Cart</p></div>
+                                    </div>
+
+
+
+                                </div> ";
+
+
+
+
+}
+
+
+*/?>

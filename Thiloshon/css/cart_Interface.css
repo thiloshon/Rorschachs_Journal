@@ -257,6 +257,12 @@
     margin-right: 60px
 }
 
+#can3 {
+    width: 500px;
+    float: left;
+    margin-right: 60px
+}
+
 #can {
     width: 270px;
     float: left;
@@ -280,6 +286,11 @@
 #text {
     float: left;
     max-width: 150px;
+}
+
+#text2 {
+    float: left;
+    max-width: 200px;
 }
 
 /***********************************************The Cart************************************************************/
