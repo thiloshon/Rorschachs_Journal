@@ -18,7 +18,7 @@ body {
 
   color: #777777;
   color: #7f7f7f;
-  background: #fff;
+  background: #4b5e62;
   height: 100%;
   position: relative;
 }
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-header #navbar li a {
   font-family: icomoon, "Source Sans Pro", Arial, sans-serif;
   /*font-family: "Source Sans Pro", Arial, sans-serif;*/
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(26, 188, 156, 0.5);
   position: relative;
   font-size: 19px;
   font-weight: 300;
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header #navbar li a:hover {
   /*color: #71cee5;*/
-  color: #fff;
+  color: #1abc9c;
 }
 #fh5co-header #navbar li a:hover span:before {
   visibility: visible;
@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-header #navbar li.active a {
   background: transparent;
   background: none;
-  color: #fff;
+  color: #16a085;
 
 }
 #fh5co-header #navbar li.active a span:before {
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-weight: 700;
   padding-left: 0;
-  color: #fff;
+  color: #4b5e62;
 }
 #fh5co-header.navbar-fixed-top {
   position: fixed !important;
@@ -244,8 +244,8 @@ h1, h2, h3, h4, h5, h6 {
   background-attachment: fixed;
   position: relative;
   width: 100%;
-  background-color: #52d3aa;
-  color: #fff;
+  background-color: #4b5e62;
+  color: #4b5e62;
   overflow: hidden;
   /*margin-top: -250px;*/
 }
@@ -258,15 +258,15 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   opacity: .9;
   -webkit-backface-visibility: hidden;
-  background-color: #d30b1c;
+  background-color: #4b5e62;
   /* IE9, iOS 3.2+ */
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #d3005a), color-stop(1, #d30026));
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #4b5e62), color-stop(1, #4b5e62));
   /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #d3005a 0%, #d30026 100%);
+  background-image: -webkit-repeating-linear-gradient(top left, #4b5e62 0%, #4b5e62 100%);
   /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #d3005a 0%, #d30b1c 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #d3005a 0%, #d30b1c 100%);
+  background-image: repeating-linear-gradient(to bottom right, #4b5e62 0%, #4b5e62 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #4b5e62 0%, #4b5e62 100%);
 }
 #fh5co-home, #fh5co-home .text-wrap {
   height: 500px;
@@ -314,7 +314,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: rotate(-1.7deg);
   -o-transform: rotate(-1.7deg);
   -moz-transform: rotate(-1.7deg);
-  background-color: #fff;
+  background-color: #4b5e62;
   content: "";
   z-index: 3;
   display: inline-block;
