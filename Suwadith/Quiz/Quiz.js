@@ -16,27 +16,31 @@ function showMarks() {
     document.getElementById("timer").setAttribute('class', 'hide');
     document.getElementById("resultsMenu").setAttribute('class', 'show');
     checkAnswers();
-    seconds=0;
+    seconds = 0;
 }
 
 
 var seconds = 0;
 function timer() {
-        seconds = 100;
-        var interval = setInterval(function () {
-            document.getElementById('timer').innerHTML = "Seconds Left " + --seconds;
+    seconds = 100;
+    var interval = setInterval(function () {
+        document.getElementById('timer').innerHTML = "Seconds Left " + --seconds;
 
-            if (seconds == 0) {
-                document.getElementById('timer').innerHTML = 'Time up';
-                clearInterval(interval);
-                showMarks();
-            }
-        }, 1000);
-    }
+        if (seconds == 0) {
+            document.getElementById('timer').innerHTML = 'Time up';
+            clearInterval(interval);
+            showMarks();
+        }
+    }, 1000);
+}
 
 
 var marks = 0;
-var CorrectAnswers = ["b", "b", "b", "a", "b", "a", "b", "c", "a", "d"];
+var correctAnswers = ["b", "b", "b", "a", "b", "a", "b", "c", "a", "d"];
+var correctAnswer = "you've chosen the correct answer. It's  ";
+var incorrectAnswer = "Incorrect answer. Correct Answer is ";
+var didntChoose = "You didn't choose an answer. Correct Answer is ";
+var correctChoice = ["Casablanca", "Sherlock Holmes", "A Beautiful Mind", "Queen of Hearts", "The Curious Case of Benjamin Button", "Chicken", "Chicago", "Child's Play", "Up", "The Return of the King"];
 var radios;
 
 
@@ -46,16 +50,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[0]) {
-                document.getElementById("displayAnswer1").innerHTML = "you've chosen the correct answer. It's Casablanca";
+            if (radios[i].value == correctAnswers[0]) {
+                document.getElementById("displayAnswer1").innerHTML = correctAnswer + correctChoice[0];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer1").innerHTML = "Incorrect answer. Correct Answer is Casablanca";
+                document.getElementById("displayAnswer1").innerHTML = incorrectAnswer + correctChoice[0];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer1").innerHTML = "You didn't choose an answer. Correct Answer is Casablanca";
+            document.getElementById("displayAnswer1").innerHTML = didntChoose + correctChoice[0];
             marks += 0;
         }
     }
@@ -65,16 +69,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[1]) {
-                document.getElementById("displayAnswer2").innerHTML = "you've chosen the correct answer. It's  Sherlock Holmes";
+            if (radios[i].value == correctAnswers[1]) {
+                document.getElementById("displayAnswer2").innerHTML = correctAnswer + correctChoice[1];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer2").innerHTML = "Incorrect answer. Correct Answer is Sherlock Holmes";
+                document.getElementById("displayAnswer2").innerHTML = incorrectAnswer + correctChoice[1];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer2").innerHTML = "You didn't choose an answer. Correct Answer is Sherlock Holmes";
+            document.getElementById("displayAnswer2").innerHTML = didntChoose + correctChoice[1];
             marks += 0;
         }
     }
@@ -84,16 +88,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[2]) {
-                document.getElementById("displayAnswer3").innerHTML = "you've chosen the correct answer. It's A Beautiful Mind";
+            if (radios[i].value == correctAnswers[2]) {
+                document.getElementById("displayAnswer3").innerHTML = correctAnswer + correctChoice[2];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer3").innerHTML = "Incorrect answer. Correct Answer is A Beautiful Mind";
+                document.getElementById("displayAnswer3").innerHTML = incorrectAnswer + correctChoice[2];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer3").innerHTML = "You didn't choose an answer. Correct Answer is A Beautiful Mind";
+            document.getElementById("displayAnswer3").innerHTML = didntChoose + correctChoice[2];
             marks += 0;
         }
     }
@@ -103,16 +107,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[3]) {
-                document.getElementById("displayAnswer4").innerHTML = "you've chosen the correct answer. It's Queen of Hearts";
+            if (radios[i].value == correctAnswers[3]) {
+                document.getElementById("displayAnswer4").innerHTML = correctAnswer + correctChoice[3];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer4").innerHTML = "Incorrect answer. Correct Answer is It's Queen of Hearts";
+                document.getElementById("displayAnswer4").innerHTML = incorrectAnswer + correctChoice[3];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer4").innerHTML = "You didn't choose an answer. Correct Answer is It's Queen of Hearts";
+            document.getElementById("displayAnswer4").innerHTML = didntChoose + correctChoice[3];
             marks += 0;
         }
     }
@@ -122,16 +126,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[4]) {
-                document.getElementById("displayAnswer5").innerHTML = "you've chosen the correct answer. It's The Curious Case of Benjamin Button";
+            if (radios[i].value == correctAnswers[4]) {
+                document.getElementById("displayAnswer5").innerHTML = correctAnswer + correctChoice[4];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer5").innerHTML = "Incorrect answer. Correct Answer is The Curious Case of Benjamin Button";
+                document.getElementById("displayAnswer5").innerHTML = incorrectAnswer + correctChoice[4];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer5").innerHTML = "You didn't choose an answer. Correct Answer is The Curious Case of Benjamin Button";
+            document.getElementById("displayAnswer5").innerHTML = didntChoose + correctChoice[4];
             marks += 0;
         }
     }
@@ -141,16 +145,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[5]) {
-                document.getElementById("displayAnswer6").innerHTML = "you've chosen the correct answer. It's Chicken";
+            if (radios[i].value == correctAnswers[5]) {
+                document.getElementById("displayAnswer6").innerHTML = correctAnswer + correctChoice[5];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer6").innerHTML = "Incorrect answer. Correct Answer is Chicken";
+                document.getElementById("displayAnswer6").innerHTML = incorrectAnswer + correctChoice[5];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer6").innerHTML = "You didn't choose an answer. Correct Answer is Chicken";
+            document.getElementById("displayAnswer6").innerHTML = didntChoose + correctChoice[5];
             marks += 0;
         }
     }
@@ -160,16 +164,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[6]) {
-                document.getElementById("displayAnswer7").innerHTML = "you've chosen the correct answer. It's Chicago";
+            if (radios[i].value == correctAnswers[6]) {
+                document.getElementById("displayAnswer7").innerHTML = correctAnswer + correctChoice[6];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer7").innerHTML = "Incorrect answer. Correct Answer is Chicago";
+                document.getElementById("displayAnswer7").innerHTML = incorrectAnswer + correctChoice[6];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer7").innerHTML = "You didn't choose an answer. Correct Answer is Chicago";
+            document.getElementById("displayAnswer7").innerHTML = didntChoose + correctChoice[6];
             marks += 0;
         }
     }
@@ -179,16 +183,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[7]) {
-                document.getElementById("displayAnswer8").innerHTML = "you've chosen the correct answer. It's Child's Play";
+            if (radios[i].value == correctAnswers[7]) {
+                document.getElementById("displayAnswer8").innerHTML = correctAnswer + correctChoice[7];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer8").innerHTML = "Incorrect answer. Correct Answer is Child's Play";
+                document.getElementById("displayAnswer8").innerHTML = incorrectAnswer + correctChoice[7];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer8").innerHTML = "You didn't choose an answer. Correct Answer is Child's Play";
+            document.getElementById("displayAnswer8").innerHTML = didntChoose + correctChoice[7];
             marks += 0;
         }
     }
@@ -198,16 +202,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[8]) {
-                document.getElementById("displayAnswer9").innerHTML = "you've chosen the correct answer. It's Up";
+            if (radios[i].value == correctAnswers[8]) {
+                document.getElementById("displayAnswer9").innerHTML = correctAnswer + correctChoice[8];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer9").innerHTML = "Incorrect answer. Correct Answer is Up";
+                document.getElementById("displayAnswer9").innerHTML = incorrectAnswer + correctChoice[8];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer9").innerHTML = "You didn't choose an answer. Correct Answer is Up";
+            document.getElementById("displayAnswer9").innerHTML = didntChoose + correctChoice[8];
             marks += 0;
         }
     }
@@ -217,16 +221,16 @@ function checkAnswers() {
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             (radios[i].value);
-            if (radios[i].value == CorrectAnswers[9]) {
-                document.getElementById("displayAnswer10").innerHTML = "you've chosen the correct answer. It's The Return of the King";
+            if (radios[i].value == correctAnswers[9]) {
+                document.getElementById("displayAnswer10").innerHTML = correctAnswer + correctChoice[9];
                 marks += 2;
             } else {
-                document.getElementById("displayAnswer10").innerHTML = "Incorrect answer. Correct Answer is The Return of the King";
+                document.getElementById("displayAnswer10").innerHTML = incorrectAnswer + correctChoice[9];
                 marks -= 1;
             }
             break;
         } else {
-            document.getElementById("displayAnswer10").innerHTML = "You didn't choose an answer. Correct Answer is The Return of the King";
+            document.getElementById("displayAnswer10").innerHTML = didntChoose + correctChoice[9];
             marks += 0;
         }
     }
@@ -237,10 +241,10 @@ function checkAnswers() {
         document.body.style.backgroundColor = "lightseagreen";
     } else if (marks >= 5) {
         document.body.style.backgroundColor = "yellow";
-    } else if(marks >= 0){
+    } else if (marks >= 0) {
         document.body.style.backgroundColor = "red";
-    }else{
-        marks=0;
+    } else {
+        marks = 0;
     }
 
     var m = marks.toString();
