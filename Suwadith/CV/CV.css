@@ -46,7 +46,7 @@ h1 {
 }
 
 img {
-    border-radius: 50%;
+    border-radius: 50%; /*adds a circle border*/
 }
 
 button {
