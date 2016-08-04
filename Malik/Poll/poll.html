@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>poll</title>
-
+    <link rel="stylesheet" type="text/css" href="pollStyle.css">
 <script>
     function getVote(int) {
         if (window.XMLHttpRequest) {
@@ -24,15 +24,16 @@
 <body>
 
 <div id="poll">
-    <h3>Does Suwadith like grannies?</h3>
+    <h2 align="center"><font size="20px" color="black">Whose side are you on? :</font></h2>
     <form>
-        Yes:
+        Team Cap:
         <label>
             <input type="radio" name="vote" value="0" onclick="getVote(this.value)" id="vote2">
         </label>
         <br>
-        No:
-        <label>
+        <br>
+        Team Iron man:
+        <label >
             <input type="radio" name="vote" value="1" onclick="getVote(this.value )" id="vote1">
         </label>
     </form>

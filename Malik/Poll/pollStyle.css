@@ -1,0 +1,13 @@
+div#poll{
+
+    background: url(CapVsIron.jpg);
+    max-width: 1000px;
+    margin-bottom: 2000px
+
+}
+form{
+    align: center;
+}
+body{
+    background: #777777;
+}

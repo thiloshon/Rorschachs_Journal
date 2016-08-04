@@ -7,18 +7,18 @@ $content = file($filename);
 
 //put content in array
 $array = explode("||", $content[0]);
-$yes = $array[0];
-$no = $array[1];
+$teamCap = $array[0];
+$teamIronMan = $array[1];
 
 if ($vote == 0) {
-    $yes = $yes + 1;
+    $teamCap = $teamCap + 1;
 }
 if ($vote == 1) {
-    $no = $no + 1;
+    $teamIronMan = $teamIronMan + 1;
 }
 
 //insert votes to txt file
-$insertvote = $yes."||".$no;
+$insertvote = $teamCap."||".$teamIronMan;
 $fp = fopen($filename,"w");
 fputs($fp,$insertvote);
 fclose($fp);
@@ -42,10 +42,10 @@ fclose($fp);
     </style>
 </script>
 <br/><br/><br/>
-<h2 align="center"><font size="20px" color="#afafaf">The current poll status :</font></h2>
+<h2 align="center"><font size="20px" color="black">The current poll status :</font></h2>
 <table align="center"  bgcolor="#08837e" class="box">
     <tr>
-        <td>Yes:</td>
+        <td>Team Cap:</td>
         <td>
 
             <img src="yes.jpg"
@@ -55,7 +55,7 @@ fclose($fp);
         </td>
     </tr>
     <tr>
-        <td>No:</td>
+        <td>Team iron man:</td>
         <td>
 
             <img src="no.jpg"
@@ -64,4 +64,6 @@ fclose($fp);
             <?php echo(100*round($no/($no+$yes),2)); ?>%
         </td>
     </tr>
+    <br>
+    <br>
 </table>
