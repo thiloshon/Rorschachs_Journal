@@ -12,14 +12,14 @@ body{
     padding: 2em 2em 10em;
     max-width: 800px;
     line-height: 1.5em;
-    background-color: mediumspringgreen;
+    background-color: white;
     border-style: solid;
     border-left: solid deepskyblue;
     border-bottom: solid deepskyblue;
     border-width: 15px;
 }
 
-.buttonStyle{
+.buttonStyle{ /*Button style*/
     font-family: EthRomainEthon;
     font-weight: bold;
     background-color: orange;
@@ -39,7 +39,7 @@ body{
     cursor: pointer;
 }
 
-@font-face {
+@font-face { /*Importing a new font*/
     font-family: EthRomainEthon;
     src: url(EthRomainEthon.ttf);
 }

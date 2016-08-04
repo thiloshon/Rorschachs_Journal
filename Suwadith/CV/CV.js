@@ -3,8 +3,8 @@
  */
 
 function clickThiloshon(){
-    document.getElementById("ourTeam").setAttribute('class', 'hidden');
-    document.getElementById("thiloshon").setAttribute('class', 'display');
+    document.getElementById("ourTeam").setAttribute('class', 'hidden'); /*hides the ourTeam class*/
+    document.getElementById("thiloshon").setAttribute('class', 'display'); /*Displays Thiloshon's CV*/
 }
 
 function clickMalik(){

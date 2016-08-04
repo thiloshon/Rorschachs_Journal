@@ -1,5 +1,5 @@
 html{
-    background-image: url(background.jpg);
+    background-image: url(background.jpg);  /*add a new background image*/
 }
 
 body{
@@ -15,12 +15,11 @@ body{
 }
 
 @font-face {
-    font-family: EthRomainEthon;
+    font-family: EthRomainEthon; /*importing a new font file*/
     src: url(EthRomainEthon.ttf);
 }
 
 h1 {
-    /*padding: 0em 0em 0em 0em;*/
     color: black;
     text-align: center;
     font-family: EthRomainEthon;
@@ -39,8 +38,9 @@ ul{
     padding: 0em 1em 1em 4em;
     color: black;
     text-align: left;
-    font-family: "";
+    font-family: Calibri;
     font-size: 30px;
+    font-weight: bold;
 }
 
 footer {
@@ -49,7 +49,4 @@ footer {
     color: white;
     clear: both;
     text-align: center;
-    /*padding: !*5px*! ;*/
-    /*position:absolute;
-    bottom:0;*/
 }
