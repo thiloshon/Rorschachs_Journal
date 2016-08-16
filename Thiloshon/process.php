@@ -43,7 +43,7 @@ if (isset($_SESSION["goodCredentials"])){   /*Runs if the user is logged in and 
     $_pass = $_SESSION["password"];
     $_name = $_SESSION["username"];
 
-    
+
     include "config.php";
     $_query = "select * from users";
     $_result = mysqli_query($con, $_query);
@@ -52,7 +52,7 @@ if (isset($_SESSION["goodCredentials"])){   /*Runs if the user is logged in and 
         if ($row['username'] == $_SESSION["username"]) {
             echo "Good Credentials";
 
-            
+
             $_prodID = $_GET["product"];
             $_amount = $_GET["number"];
             echo $_SESSION["currentProduct"];
@@ -126,24 +126,3 @@ if (isset($_SESSION["goodCredentials"])){   /*Runs if the user is logged in and 
     
 </div> ";
 }
-
-
-
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

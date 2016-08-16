@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>THE film CART</title>
-    <link rel="stylesheet" href="css/cart_Interface.css">
+
 
     <!--<link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/googleapi.css">-->
@@ -20,6 +20,9 @@
     <!--Import Google Icon Font-->
     <!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <!--Import materialize.css-->
+    <!--<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/cart_Interface.css">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <Link type="text/css" rel="stylesheet" href="css/customMaterialize.css">
     <!--<link rel="stylesheet" href="css/reset.css">--> <!-- CSS reset -->
@@ -27,16 +30,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!--<script src="js/tabs/modernizr.js"></script>--> <!-- Modernizr -->
 
+
 </head>
 <body>
-<!--
-<?php
-/*
-include "Header.php";
 
-*/ ?>
 
--->
+
+
+
+
 <!--<div class="behind">
     <img src="images/collage-copy.jpg" id="image" class="behind" alt="Movie Hub" style="width:1550px;height:750px;" >
 </div>-->
@@ -523,6 +525,8 @@ include "Header.php";
 
 
 </body>
+
+
 
 <script src="js/jquery.min.js"></script>
 <script src="js/application.js"></script>
