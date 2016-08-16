@@ -8,7 +8,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>THE film CART</title>
@@ -18,21 +18,25 @@
     <link rel="stylesheet" href="css/googleapi.css">-->
 
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <Link type="text/css" rel="stylesheet" href="css/customMaterialize.css">
-    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <!--<link rel="stylesheet" href="css/reset.css">--> <!-- CSS reset -->
     <link rel="stylesheet" href="css/style2.css"> <!-- Resource style -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/tabs/modernizr.js"></script> <!-- Modernizr -->
+    <!--<script src="js/tabs/modernizr.js"></script>--> <!-- Modernizr -->
 
 </head>
 <body>
+<!--
+<?php
+/*
+include "Header.php";
 
+*/ ?>
 
-
-
+-->
 <!--<div class="behind">
     <img src="images/collage-copy.jpg" id="image" class="behind" alt="Movie Hub" style="width:1550px;height:750px;" >
 </div>-->
@@ -197,7 +201,6 @@
 
 
                                 </div>
-
 
 
                                 <div id="can">
