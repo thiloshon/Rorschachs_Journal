@@ -35,7 +35,7 @@ session_start();
 
 
 
-if (isset($_SESSION["goodCredentials"])){
+if (isset($_SESSION["goodCredentials"])){   /*Runs if the user is logged in and has valid sessiosn ids*/
 
     $_SESSION["currentProduct"] = $_GET["product"];
     $_SESSION["currentNumber"] = $_GET["number"];
