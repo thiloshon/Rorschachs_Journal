@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <div class = "background"></div>
+
     <h1><u>Contact Us !!</u></h1>
     <form name = "contactus_form" onsubmit="return validate()" action="connectDB.php" method="post">
         <table>
@@ -23,19 +25,19 @@
            <td><input type = "text" name = "name"  size = "47" style = "height:35px;" required="true"><br/></td>
         </tr>
         <tr>
-            <td>Email Address : </td>
+            <td>Email Address :
+            </td></td>
         </tr>
         <tr>
             <td>
                 <input type = "text" name = "email"  size="47" style = "height:35px">
-                <div class="tooltip"> <img src ="http://localhost/Rorsach's Journal/Yohan/Contact Us form/info.jpeg" alt="heart img" width="22px" height="22px" align="middle"/>
+                <div class="tooltip"> <img src ="Images\info.jpeg" alt="heart img" width="22px" height="22px" align="middle"/>
                     <span class="tooltiptext">Enter address as somebody@mymail.com </span>
                 </div>
             </td>
         </tr>
         <tr>
             <td>Would you like to receive email notifications <br/> for new movie releases? <input type = "checkbox" id = "notify" value = "notification"></td>
-
         </tr>
         <tr>
             <td>Rate our site : <br/>
@@ -44,9 +46,6 @@
                 <input type="radio" id = "rate3" name = "ratings" value = "average">Average
                 <input type="radio" id = "rate4" name = "ratings" value = "good">Good
                 <input type="radio" id = "rate5" name = "ratings" value = "awesome">Awesome</td>
-        </tr>
-        <tr>
-
         </tr>
         <tr>
             <td> Comment(s) :</td>
@@ -95,7 +94,4 @@
 
     }
 </script>
-<style>
-
-</style>
 </html>

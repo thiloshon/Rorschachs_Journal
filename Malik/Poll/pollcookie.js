@@ -1,4 +1,3 @@
-<script>
 $(document).ready(function(){
     $("#poll").click(function(){
         var count = '';
@@ -37,4 +36,3 @@ $(document).ready(function(){
         }
     });
 });
-</script>

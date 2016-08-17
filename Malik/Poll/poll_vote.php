@@ -1,5 +1,6 @@
 <?php
 $vote = $_REQUEST['vote'];
+boolval(set_time_limit(60*60*24*7));
 
 //get content of textfile
 $filename = "poll_result.txt";
@@ -23,7 +24,7 @@ $fp = fopen($filename,"w");
 fputs($fp,$insertvote);
 fclose($fp);
 ?>
-
+<script src="pollcookie.js"></script>
 <script>
     <style>
     table {
@@ -42,16 +43,19 @@ fclose($fp);
     </style>
 </script>
 <br/><br/><br/>
-<h2 align="center"><font size="20px" color="black">The current poll status :</font></h2>
+<div id="transbox" align="center">
+    <h2 align="center"><font size="20px" color="black">The current poll status :</font></h2>
+</div>
+
 <table align="center"  bgcolor="#08837e" class="box">
     <tr>
         <td>Team Cap:</td>
         <td>
 
             <img src="yes.jpg"
-                 width='<?php echo(100*round($yes/($no+$yes),2)); ?>'
+                 width='<?php echo(100*round($teamCap/($teamIronMan+$teamCap),2)); ?>'
                  height='20'>
-            <?php echo(100*round($yes/($no+$yes),2)); ?>%
+            <?php echo(100*round($teamCap/($teamIronMan+$teamCap),2)); ?>%
         </td>
     </tr>
     <tr>
@@ -59,11 +63,12 @@ fclose($fp);
         <td>
 
             <img src="no.jpg"
-                 width='<?php echo(100*round($no/($no+$yes),2)); ?>'
+                 width='<?php echo(100*round($teamIronMan/($teamIronMan+$teamCap),2)); ?>'
                  height='20'>
-            <?php echo(100*round($no/($no+$yes),2)); ?>%
+            <?php echo(100*round($teamIronMan/($teamIronMan+$teamCap),2)); ?>%
         </td>
     </tr>
-    <br>
-    <br>
 </table>
+
+
+
