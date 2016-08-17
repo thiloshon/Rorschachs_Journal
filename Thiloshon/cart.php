@@ -1,19 +1,15 @@
-
 <HTML>
 <!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
     <title>THE film CART</title>
-    <link rel="stylesheet" href="css/header/flat-ui.min.css" >
-    <link rel="stylesheet" href="css/addToCart.css" >
-
-
-
+    <link rel="stylesheet" href="css/header/flat-ui.min.css">
+    <link rel="stylesheet" href="css/addToCart.css">
 
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
             $('#modal1').openModal();
         });
@@ -37,8 +33,8 @@ include "Header.php";
 
 
             <h1 id="headingVariant">Your</h1>
-            <h1 id="heading2" >
-                 Shopping Cart
+            <h1 id="heading2">
+                Shopping Cart
             </h1>
             <h4 id="snippet">
                 View Your Cart Here
@@ -46,47 +42,57 @@ include "Header.php";
 
         </div>
         <div id="bottom">
+            <table id="table">
+                <tr>
+                    <th>Product ID</th>
+                    <th>Amount</th>
+                </tr>
 
-            <?php
-            /**
-             * Created by PhpStorm.
-             * User: Thiloshon
-             * Date: 03-Aug-16
-             * Time: 6:02 PM
-             */
+                <?php
+                /**
+                 * Created by PhpStorm.
+                 * User: Thiloshon
+                 * Date: 03-Aug-16
+                 * Time: 6:02 PM
+                 */
 
-            session_start();
-            if (isset($_SESSION["goodCredentials"])){
-                include "config.php";
+                session_start();
+                if (isset($_SESSION["goodCredentials"])) {
+                    include "config.php";
 
-                $query2 = "SELECT * FROM sales";
-                $result2 = mysqli_query($con, $query2);
+                    $query2 = "SELECT * FROM sales";
+                    $result2 = mysqli_query($con, $query2);
 
-                while($row = mysqli_fetch_array($result2)) {
-                    if ($row['username'] == $_SESSION["username"]) {
-                        echo $row['productID'];
-                        echo "</br>";
-                        echo $row['Amount'];
-                        echo "</br>";
-                        echo "</br>";
+                    while ($row = mysqli_fetch_array($result2)) {
+                        if ($row['username'] == $_SESSION["username"]) {
+                            echo "<tr><td>";
+                            echo $row['productID'];
+                            /*echo "</br>";*/
+                            echo "</td><td>";
+                            echo $row['Amount'];
+                            echo "</td></tr>";
+
+
+                            /*echo "</br>";
+                            echo "</br>";*/
+
+                        }
 
                     }
-
                 }
-            }
 
-            ?>
+                ?>
+            </table>
 
             <form id="logout" method="get" action="logout.php">
 
-                <input type="submit" value="Logout" >
+                <input type="submit" value="Logout">
 
             </form>
 
         </div>
     </div>
 </div>
-
 
 
 <!--<a href="ShoppingCart.php">Add to cart</a>-->

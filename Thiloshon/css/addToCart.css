@@ -75,3 +75,24 @@
 #body {
 overflow: hidden;
 }
+
+#table {
+    margin-left: 10%;
+    margin-right: 20%;
+
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    border-spacing: 25px;
+    border-collapse: collapse;
+    width:60%;
+}
+
+#table td, th {
+    margin-top: 40px;
+    /*border: 1px solid #dddddd;*/
+    text-align: center;
+    padding: 10px;
+}
+
+#table tr:nth-child(even) {
+    background-color: #dddddd;
+}
