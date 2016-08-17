@@ -1,3 +1,21 @@
+<HTML>
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE film CART</title>
+    <link rel="stylesheet" href="css/header/flat-ui.min.css">
+
+
+
+</head>
+<body>
+<?php
+include "Header.php";
+echo "<link rel=\"stylesheet\" href=\"css/product.css\">";
+?>
+
+
 <?php
 
 
@@ -21,24 +39,26 @@ while ($row = mysqli_fetch_array($result2)) {
         echo "
         
 <div id=\"body\">
-    <div id=\"image\">       
+    <div id=\"sidePanel\" class=\"sidePanel\">  
         
-        <img src=\"".$path."\" alt=\"Movie Hub\" class=\"z-depth-5\"
-     style=\"height:300px;\">
+        <img src=\"" . $path . "\" alt=\"Movie Hub\" class=\"z-depth-5\" id=\"image\"
+     style=\"width: 50%\">
         
     </div>
-    <div id=\"details\">
-        <div id=\"name\">
-            ".$name."
+    <div id=\"contentPanel\">
+        <div id=\"name3\">
+            " . $name1 . "
         </div>
         <div id=\"description\">
-".$des."
+" . $des . "
         </div>
         <div id=\"remaining\">
-".$amount."
+        Remaining : 
+" . $amount . "
         </div>
         <div id=\"price\">
-".$price."
+        Price: 
+" . $price . "
         </div>
         <div id=\"addtocart\">
 
@@ -57,7 +77,24 @@ while ($row = mysqli_fetch_array($result2)) {
 echo $name;
 ?>
 
-<div id="body">
+<!--<a href="ShoppingCart.php">Add to cart</a>-->
+
+
+</body>
+
+<script>
+    function checkData() {
+
+    }
+</script>
+
+</html>
+
+
+<!--888888888888888888888888888888888-->
+
+
+<div id="body" >
     <div id="image">
 
 

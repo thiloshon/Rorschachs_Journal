@@ -1,0 +1,33 @@
+#sidePanel {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+#contentPanel {
+    margin-top: 10%;
+
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+#image {
+    margin-top:10%;
+    margin-left: 20%;
+    overflow: hidden;
+}
+#name3{
+    color: rgb(255, 255, 255);
+
+    font-size: 70px;
+    font-weight: 400;
+}
+h3 {
+    color: rgb(255, 255, 255);
+    /*margin-top: 27%;*/
+    font-size: 30px;
+    font-weight: 400;
+    /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+}
+#description {
+    padding-right: 10%;
+}

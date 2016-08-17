@@ -115,6 +115,9 @@ if (isset($_SESSION["goodCredentials"])){   /*Runs if the user is logged in and 
                 </div>
                 <input type=\"submit\" id=\"submit1\" class=\"modal-action modal-close waves-effect waves-green btn-flat \" value=\"Login\" >
             </form>
+            <form class=\"col s12\" action=\"signup.php\">
+            <input type=\"submit\" id=\"submit1\" class=\"modal-action modal-close waves-effect waves-green btn-flat \" value=\"Sign Up\" >
+</form >
         </div>
         
 
