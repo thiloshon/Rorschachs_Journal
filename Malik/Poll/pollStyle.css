@@ -5,9 +5,18 @@ div#poll{
     margin-bottom: 2000px
 
 }
+div#transbox {
+    margin-left: 170px;
+    margin-right: 170px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
 form{
     align: center;
 }
 body{
-    background: #777777;
+    background: #4b5e62;
 }
