@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cinema Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+    var map;
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 6.893939, lng: 79.854971},
+            zoom: 14,
+            styles: [{
+                "elementType": "geometry",
+                "stylers": [{"hue": "#ff4400"}, {"saturation": -68}, {"lightness": -4}, {"gamma": 0.72}]
+            }, {"featureType": "road", "elementType": "labels.icon"}, {
+                "featureType": "landscape.man_made",
+                "elementType": "geometry",
+                "stylers": [{"hue": "#0077ff"}, {"gamma": 3.1}]
+            }, {
+                "featureType": "water",
+                "stylers": [{"hue": "#00ccff"}, {"gamma": 0.44}, {"saturation": -33}]
+            }, {
+                "featureType": "poi.park",
+                "stylers": [{"hue": "#44ff00"}, {"saturation": -23}]
+            }, {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [{"hue": "#007fff"}, {"gamma": 0.77}, {"saturation": 65}, {"lightness": 99}]
+            }, {
+                "featureType": "water",
+                "elementType": "labels.text.stroke",
+                "stylers": [{"gamma": 0.11}, {"weight": 5.6}, {"saturation": 99}, {"hue": "#0091ff"}, {"lightness": -86}]
+            }, {
+                "featureType": "transit.line",
+                "elementType": "geometry",
+                "stylers": [{"lightness": -48}, {"hue": "#ff5e00"}, {"gamma": 1.2}, {"saturation": -23}]
+            }, {
+                "featureType": "transit",
+                "elementType": "labels.text.stroke",
+                "stylers": [{"saturation": -64}, {"hue": "#ff9100"}, {"lightness": 16}, {"gamma": 0.47}, {"weight": 2.7}]
+            }]
+        });
+
+        var Majestic_City = {lat: 6.893939, lng: 79.854971};
+        var Savoy = {lat: 6.879102, lng: 79.859834};
+        var Liberty = {lat: 6.912208, lng: 79.851137};
+
+
+
+        var MC = '<div id="content" style="color: #1c1c1c; ">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h1 id="firstHeading" class="firstHeading" style="color: #4CAF50; align: center;">Majestic City</h1>' +
+                '<div id="bodyContent" style="align-items: center; color: #1c1c1c ">' +
+                '<b>Majestic City</b>, also referred to as <b>MC</b>, is a unique destination center' +
+                ' out of all the other places in Sri Lanka, where you can shop, dine and watch a movie all under one roof. ' +
+                ' It includes the MC Superior 3D Theater hall and MC Platinum Theater hall.' +
+                ' <b>MC Superior 3D </b> cinema was the first to provide 3D movie experience in Sri Lanka.' +
+                ' Located on the fifth floor of the Majestic City Shopping Mall, this air conditioned hall has a ' +
+                'seating capacity of 170. For the avid movie buff this is the ultimate viewing experience due to ' +
+                'the amazing 3D effects and picture quality.' +
+                '<b> MC Platinum</b>, is the largest cinema in Sri Lanka, this theatre occupies almost the entire ' +
+                'fourth floor of the Majestic City Shopping Mall. This cinema hall can easily accommodate 450 max ' +
+                'in its large air conditioned hall. In addition to the xenon lamp projection system combined with ' +
+                'Dolby and DTS sound system provided for a sensational viewing experience, further ' +
+                'facilities include wheel chair access ramps, a snack shop and car parking' +
+                '<b>(last visited August 04, 2016).</b>' +
+                '</div>' + '</div>' +
+                '</div>';
+
+        var LibCinema ='<div id="content" style="color: #1c1c1c; ">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h1 id="firstHeading" class="firstHeading" style="color: #4CAF50; align: center;">Liberty Cinema</h1>' +
+                '<div id="bodyContent" style="align-items: center; color: #1c1c1c ">' +
+                '<b>Liberty Cinema</b>, owned and managed by EAP Films & Theaters private Limited, it has for a long ' +
+                'period of time being the one of the top end movie entertainment centers in Colombo, Sri Lanka. ' +
+                'Liberty Cinema is known for its screening of top end English , Sinhala and Hindi Movies. The cinema ' +
+                'currently screens four movies per day.' + '</div>' + '</div>' + '</div>';
+
+        var SavCinema = '<div id="content" style="color: #1c1c1c; ">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h1 id="firstHeading" class="firstHeading" style="color: #4CAF50; align: center;">Savoy Cinema</h1>' +
+                '<div id="bodyContent" style="align-items: center; color: #1c1c1c ">' +
+                '<b>Savoy Cinema</b> as with the other cinemas owned and managed by EAP Films and Theatres Pvt. Ltd, ' +
+                'this theatre boasts of the latest movie technology. The Savoy has a seating arrangement consisting of' +
+                '174 balcony seats and 541 orchestra seats. If you are interested in more private viewing, the Savoy '+
+                'also offers 8 box seats (which can seat 2 people per box seat). Patrons can relax and enjoy a choice '+
+                'of movies which are screened in English, Sinhala, Tamil and Hindi at this air conditioned cinema with '+
+                'its comfortable seating. As with most theatres in Colombo, a snack shop encompassing traditional, '+
+                'favourite theatre snacks and refreshments are available along with its own car parking facilities.' +
+                '</div>' + '</div>';
+
+        var window1 = new google.maps.InfoWindow({
+            content: MC
+        });
+
+        var marker1 = new google.maps.Marker({
+            position: Majestic_City,
+            map: map,
+            title: 'Majestic City'
+        });
+        marker1.addListener('click', function(){
+            window1.open(map, marker1);
+        });
+
+        var window2 = new google.maps.InfoWindow({
+            content: SavCinema
+        });
+
+        var marker2 = new google.maps.Marker({
+            position: Savoy,
+            map: map,
+            title: 'Savoy Cinema Hall'
+        });
+        marker2.addListener('click', function(){
+            window2.open(map, marker2);
+        });
+
+        var window3 = new google.maps.InfoWindow({
+            content: LibCinema
+        });
+
+        var marker3 = new google.maps.Marker({
+            position: Liberty,
+            map: map,
+            title: 'Liberty Cinema'
+        });
+        marker3.addListener('click', function(){
+            window3.open(map, marker3);
+        });
+
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFC5bUYZDCofGfyUiG1hhmRVRy7i_LDb4&callback=initMap"
+        async defer></script>
+</body>
+</html>
