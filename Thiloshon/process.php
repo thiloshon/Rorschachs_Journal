@@ -35,7 +35,7 @@ session_start();
 
 
 
-if (isset($_SESSION["goodCredentials"])){
+if (isset($_SESSION["goodCredentials"])){   /*Runs if the user is logged in and has valid sessiosn ids*/
 
     $_SESSION["currentProduct"] = $_GET["product"];
     $_SESSION["currentNumber"] = $_GET["number"];
@@ -43,7 +43,7 @@ if (isset($_SESSION["goodCredentials"])){
     $_pass = $_SESSION["password"];
     $_name = $_SESSION["username"];
 
-    
+
     include "config.php";
     $_query = "select * from users";
     $_result = mysqli_query($con, $_query);
@@ -52,7 +52,7 @@ if (isset($_SESSION["goodCredentials"])){
         if ($row['username'] == $_SESSION["username"]) {
             echo "Good Credentials";
 
-            
+
             $_prodID = $_GET["product"];
             $_amount = $_GET["number"];
             echo $_SESSION["currentProduct"];
@@ -115,6 +115,9 @@ if (isset($_SESSION["goodCredentials"])){
                 </div>
                 <input type=\"submit\" id=\"submit1\" class=\"modal-action modal-close waves-effect waves-green btn-flat \" value=\"Login\" >
             </form>
+            <form class=\"col s12\" action=\"signup.php\">
+            <input type=\"submit\" id=\"submit1\" class=\"modal-action modal-close waves-effect waves-green btn-flat \" value=\"Sign Up\" >
+</form >
         </div>
         
 
@@ -126,24 +129,3 @@ if (isset($_SESSION["goodCredentials"])){
     
 </div> ";
 }
-
-
-
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

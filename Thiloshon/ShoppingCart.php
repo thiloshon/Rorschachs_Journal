@@ -8,68 +8,36 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>THE film CART</title>
-    <link rel="stylesheet" href="css/cart_Interface.css">
+
 
     <!--<link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/googleapi.css">-->
 
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <!--Import materialize.css-->
+    <!--<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/cart_Interface.css">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <Link type="text/css" rel="stylesheet" href="css/customMaterialize.css">
-    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <!--<link rel="stylesheet" href="css/reset.css">--> <!-- CSS reset -->
     <link rel="stylesheet" href="css/style2.css"> <!-- Resource style -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/tabs/modernizr.js"></script> <!-- Modernizr -->
+    <!--<script src="js/tabs/modernizr.js"></script>--> <!-- Modernizr -->
+
 
 </head>
 <body>
 
 
-<header role="banner" id="fh5co-header">
-
-    <div class="containerOuter" id="containerOuter">
-        <!-- <div class="row"> -->
 
 
-        <div id="navbar-header" class="navbar-header">
-            <img src="images/Logo.png" alt="Movie Hub" style="width:136px;height:100px;">
 
-            <!--<a id="navbar-brand" class="navbar-brand" href="MainPage.html">The Film Cart</a>-->
-        </div>
-
-
-        <div id="searchbox" class="z-depth-4">
-
-            <nav>
-                <div class="nav-wrapper">
-                    <form>
-                        <div class="input-field">
-                            <input id="search" type="search" value="Search for any products">
-                            <label for="search"><i class="material-icons">search</i></label>
-                            <i class="material-icons">close</i>
-                        </div>
-                    </form>
-                </div>
-            </nav>
-
-        </div>
-
-
-        <div id="login" class="Login">
-            <a class="login" href="#">Login/Profile</a>
-        </div>
-
-
-        <!-- </div> -->
-    </div>
-
-</header>
 
 <!--<div class="behind">
     <img src="images/collage-copy.jpg" id="image" class="behind" alt="Movie Hub" style="width:1550px;height:750px;" >
@@ -86,82 +54,7 @@
 
     <div>
 
-        <div id="sidebar">
 
-            <!--<div id="legion">
-                <div class="row demo-samples">
-                    <div class="col-xs-4">
-                        <div class="todo">
-                            <div class="todo-search">
-The Legion
-
-&lt;!&ndash;<input class="todo-search-field" type="search" value="" placeholder="Search" />&ndash;&gt;
-                            </div>
-
-
-                            <div class="todo-checkout">
-END
-                            </div>
-                        </div>&lt;!&ndash; /.todo &ndash;&gt;
-                    </div>&lt;!&ndash; /.col-xs-4 &ndash;&gt;
-                </div>
-            </div>-->
-            <div id="cart">
-                <div class="row demo-samples">
-                    <div class="col-xs-4">
-                        <div class="todo">
-                            <div class="todo-search">
-                                Shopping Cart
-
-                                <!--<input class="todo-search-field" type="search" value="" placeholder="Search" />-->
-                            </div>
-                            <ul>
-                                <li class="todo-done">
-                                    <div class="todo-icon fui-user"></div>
-                                    <div class="todo-content">
-                                        <h4 class="todo-name">
-                                            Meet <strong>Adrian</strong> at <strong>6pm</strong>
-                                        </h4>
-                                        Times Square
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="todo-icon fui-list"></div>
-                                    <div class="todo-content">
-                                        <h4 class="todo-name">
-                                            Chat with <strong>V.Kudinov</strong>
-                                        </h4>
-                                        Skype
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="todo-icon fui-eye"></div>
-                                    <div class="todo-content">
-                                        <h4 class="todo-name">
-                                            Watch <strong>Iron Man</strong>
-                                        </h4>
-                                        1998
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="todo-icon fui-time"></div>
-                                    <div class="todo-content">
-                                        <h4 class="todo-name">
-                                            Fix bug on a <strong>Website</strong>
-                                        </h4>
-                                        As soon as possible
-                                    </div>
-                                </li>
-
-                            </ul>
-                            <div class="todo-checkout">
-                                Checkout Now
-                            </div>
-                        </div><!-- /.todo -->
-                    </div><!-- /.col-xs-4 -->
-                </div>
-            </div>
-        </div>
         <div id="body-outer">
 
             <div id="body-inner">
@@ -310,7 +203,6 @@ END
 
 
                                 </div>
-
 
 
                                 <div id="can">
@@ -633,6 +525,8 @@ END
 
 
 </body>
+
+
 
 <script src="js/jquery.min.js"></script>
 <script src="js/application.js"></script>
