@@ -31,9 +31,14 @@ if (isset($_SESSION["goodCredentials"])) {
 
 
         if ($uname == $nameNow) {
+
+
+
             echo"$pid";
             echo "</br>";
             echo"$amo";
+            $query4 = "UPDATE products SET Amount = ";
+            $_result4 = mysqli_query($con, $query3);
             $query3 = "INSERT INTO tracking (username, productID, amount) VALUES ('$uname', '$pid','$amo')";
             $_result3 = mysqli_query($con, $query3);
 
