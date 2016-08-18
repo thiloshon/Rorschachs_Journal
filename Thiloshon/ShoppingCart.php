@@ -175,7 +175,7 @@
 
                                 </div>
 
-                                <div id="can2">
+                                <div id="can4">
                                     <div class="ddd" id="ddd">
                                         <img src="images/drive-movie-poster.jpeg" alt="Movie Hub" style="height:400px;"
                                              class="z-depth-5">

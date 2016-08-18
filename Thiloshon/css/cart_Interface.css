@@ -252,6 +252,13 @@
 }
 
 #can2 {
+    margin-left: 10%;
+    /*width: 500px;*/
+    float: left;
+    margin-right: 60px
+}
+#can4 {
+
     width: 500px;
     float: left;
     margin-right: 60px
