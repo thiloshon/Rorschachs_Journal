@@ -1,6 +1,6 @@
 <?php
-/*include "../../Thiloshon/Header.php";
-*/?>
+include "../../Thiloshon/Header.php";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
