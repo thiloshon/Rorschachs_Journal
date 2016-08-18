@@ -37,7 +37,7 @@ include "Header.php";
                 Choose Product:
 
                 <select name="product" id="product" class="select">
-                    <option value="1"> <pre>Batman vs Superman</pre></br></option>
+                    <option value="1" > <pre>Batman vs Superman</pre></br></option>
                     <option value="2">Inception<span></span></option>
                     <option value="3">The Dark Knight Rises <span></span></option>
                     <option value="4">Drive<span></span></option>

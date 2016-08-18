@@ -65,8 +65,9 @@ if (isset($_SESSION["goodCredentials"])) {
 
 
 
-    /*$query4 = "DELETE FROM sales WHERE username='$nameNow'";
-    $result4 = mysqli_query($con, $query4); TODO Uncomment this*/
+
+    $query4 = "DELETE FROM sales WHERE username='$nameNow'";
+    $result4 = mysqli_query($con, $query4);
 
 
     /*header('Location: ShoppingCart.php');*/
