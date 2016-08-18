@@ -1,6 +1,6 @@
 <?php
-include "../../Thiloshon/Header.php";
-?>
+/*include "../../Thiloshon/Header.php";
+*/?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@ include "../../Thiloshon/Header.php";
 <section>
 
     <div id="ourTeam" class="ourTeamClass">
-<p></p>
+
         <h1>Our Team</h1>
 
         <div class="members">
