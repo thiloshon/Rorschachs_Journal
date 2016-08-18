@@ -83,6 +83,14 @@ include "Header.php";
 
                 ?>
             </table>
+            </br>
+            </br>
+
+            <form id="checkout" method="get" action="checkOut.php">
+
+                <input type="submit" value="Place Order ">
+
+            </form>
 
             <form id="logout" method="get" action="logout.php">
 

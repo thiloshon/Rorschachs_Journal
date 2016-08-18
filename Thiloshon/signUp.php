@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>THE film CART</title>
     <link rel="stylesheet" href="css/header/flat-ui.min.css">
-    <link rel="stylesheet" href="css/addToCart.css">
+    <link rel="stylesheet" href="css/signUp.css">
 
 
 </head>
@@ -35,9 +35,17 @@ include "Header.php";
             <form id="addToCart" method="get" action="SignUpProcess.php">
 
 
-                <input type="text" class="form-control login-field" value="" placeholder="Enter your name" id="login-name" >
+                <input type="text" class="form-control login-field" value="" placeholder="Enter your name" id="login-name" name="login-name">
+                </br>
+                <input type="text" class="form-control login-field" value="" placeholder="Enter your Username" id="login-username" name="login-username">
+                </br>
+                <input type="email" class="form-control login-field" value="" placeholder="Email ID" id="login-email" name="login-email">
+                </br>
+                <input type="password" class="form-control login-field" value="" placeholder="Enter your Password" id="login-pass" name="login-pass">
+                </br></br>
 
-                <input type="submit" value="Sign Up">
+                <input type="submit" value="Sign Up" id="submit">
+                </br></br>
 
             </form>
 

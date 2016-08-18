@@ -96,3 +96,14 @@ overflow: hidden;
 #table tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+#checkout {
+    float: left;
+    margin-left: 10%;
+}
+
+
+#logout {
+    float: right;
+    margin-right: 30%;
+}

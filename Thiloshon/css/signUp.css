@@ -1,0 +1,107 @@
+#sidePanel {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+#contentPanel {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+#top {
+    float: left;
+    width: 100%;
+    height: 60%;
+
+}
+#bottom {
+
+    padding-right: 50%;
+    float: left;
+    width: 100%;
+}
+
+.form-control {
+    font-family: icomoon, "Source Sans Pro", Arial, sans-serif;
+}
+
+#submit{
+    float: right;
+}
+
+.sidePanel{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#product {
+
+    max-width: 300px;
+}
+
+#heading {
+    color: rgb(255, 255, 255);
+    margin-top: 27%;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#heading2 {
+    color: rgb(255, 255, 255);
+    margin-top: -5%;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#headingVariant {
+
+    color: rgb(255, 255, 255);
+    margin-top: 20%;
+    font-size: 55px;
+    font-weight: 400;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#snippet {
+    margin-left: 48%;
+    font-size: 25px;
+    color: rgb(165, 174, 176);
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    /*font-family: "Source Sans Pro", Arial, serif;*/
+
+}
+#image {
+    margin-top:-10%;
+    overflow: hidden;
+}
+#image2 {
+    opacity: .6;
+    margin-top:5%;
+    margin-left: 3%;
+    overflow: hidden;
+}
+#body {
+    overflow: hidden;
+}
+
+#table {
+    margin-left: 10%;
+    margin-right: 20%;
+
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    border-spacing: 25px;
+    border-collapse: collapse;
+    width:60%;
+}
+
+#table td, th {
+    margin-top: 40px;
+    /*border: 1px solid #dddddd;*/
+    text-align: center;
+    padding: 10px;
+}
+
+#table tr:nth-child(even) {
+    background-color: #dddddd;
+}
