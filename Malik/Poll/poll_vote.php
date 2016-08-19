@@ -27,20 +27,21 @@ fclose($fp);
 <script src="pollcookie.js"></script>
 <script>
     <style>
-    table {
-        border-spacing: 20px;
-        border-radius: 25px;
-    }
-    .box {
+    table; {
+        border-spacing: 20px;;;
+        border-radius: 25px;;;
+    };;;;
+    .box; {
         /*width:300px;
          height:300px;*/
-        position:fixed;
-        margin-left:-150px; /* half of width */
-        margin-top:-2500px;  /* half of height */
-        top:50%;
-        left:55%;
-    }
+        fixed;
+        margin-left:-150px;;; /* half of width */
+        margin-top:-2500px;;;  /* half of height */
+        50 %;
+        55 %;
+    };;;;
     </style>
+
 </script>
 <br/><br/><br/>
 <div id="transbox" align="center">

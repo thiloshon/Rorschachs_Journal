@@ -10,9 +10,9 @@ $(document).ready(function(){
 
         var jsonV= { "vote": count };
 
-        if ( localStorage.getItem( 'voted' ) == 'true' ) {
+        if ( sessionStorage.getItem( 'voted' ) == 'true' ) {
             alert('You have already voted!');
-        }else if ( localStorage.getItem( 'voted' ) == null ){
+        }else if ( sessionStorage.getItem( 'voted' ) == null ){
             $.ajax({
                 type  : "POST",
                 url   : "poll_vote.php",
@@ -24,7 +24,7 @@ $(document).ready(function(){
                 },
                 complete : function(){
                     $("#poll").slideUp();
-                    localStorage.setItem('voted', 'true');
+                    sessionStorage.setItem('voted', 'true');
                 },
                 error : function( error,responseText ){
                     // alert("Server not Responding. Sorry for the inconvenience caused. Please Try again Later");
