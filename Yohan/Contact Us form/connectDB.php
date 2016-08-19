@@ -1,9 +1,9 @@
 <?php
 //set up the database security
     $host = "localhost";
-    $dbuser = "customer";
+    $dbuser = "root";
     $dbpass = "";
-    $dbase = "rorschachs journal";
+    $dbase = "commentsdb";
 
 //connect to the database server
     $conn = mysqli_connect($host, $dbuser, $dbpass);
@@ -18,10 +18,10 @@
     }
 
 //getting all the form details
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $rating = $_POST['ratings'];
-    $comment = $_POST['comments'];
+    $name = $_GET["name"];
+    $email = $_GET["email"];
+    $rating = $_GET["ratings"];
+    $comment = $_GET["comments"];
 
 //sql query to insert data into the database
     $select = "INSERT INTO commentsdb(Full_Name, Email, Rating, Comment) VALUES($name,$email,$rating,$comment)";

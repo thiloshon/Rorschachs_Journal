@@ -78,7 +78,7 @@
     z-index: 10;
     float: left;
     display: block;
-    width: 80%;
+    width: 100%;
 }
 
 #legion {
@@ -252,6 +252,13 @@
 }
 
 #can2 {
+    margin-left: 10%;
+    /*width: 500px;*/
+    float: left;
+    margin-right: 60px
+}
+#can4 {
+
     width: 500px;
     float: left;
     margin-right: 60px
@@ -284,6 +291,7 @@
 }
 
 #text {
+    margin-top: -4%;
     float: left;
     max-width: 150px;
 }

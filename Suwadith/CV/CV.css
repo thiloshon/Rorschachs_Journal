@@ -1,16 +1,24 @@
 html{
-    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #d3005a), color-stop(1, #d30026));
-    /* Android 2.3 */
+    /*background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #d3005a), color-stop(1, #d30026));
+    !* Android 2.3 *!
     background-image: -webkit-repeating-linear-gradient(top left, #d3005a 0%, #d30026 100%);
-    /* IE10+ */
+    !* IE10+ *!
     background-image: repeating-linear-gradient(to bottom right, #d3005a 0%, #d30b1c 100%);
-    background-image: -ms-repeating-linear-gradient(top left, #d3005a 0%, #d30b1c 100%);
+    background-image: -ms-repeating-linear-gradient(top left, #d3005a 0%, #d30b1c 100%);*/
+
+    /*background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #4b5e62), color-stop(1, #4b5e62));
+    !* Android 2.3 *!
+    background-image: -webkit-repeating-linear-gradient(top left, #4b5e62 0%, #4b5e62 100%);
+    !* IE10+ *!
+    background-image: repeating-linear-gradient(to bottom right, #4b5e62 0%, #4b5e62 100%);
+    background-image: -ms-repeating-linear-gradient(top left, #4b5e62 0%, #4b5e62 100%);*/
 }
 
 body{
     margin: 0 auto;
     padding: 2em 2em 10em;
-    max-width: 900px;
+    max-width: 100%;
+    max-height: 100%;
     line-height: 1.5em;
     background-color: white;
     border-style: solid;
